@@ -1,0 +1,85 @@
+canonical_variable,source_table,ITEMID,item_label,category,mimic_unit,target_unit,provenance,domain,inclusion_status
+ALP,LABEVENTS,50863,Alkaline Phosphatase,Chemistry,,IU/L,laboratory dictionary,carevue,included
+ALT,LABEVENTS,50861,Alanine Aminotransferase (ALT),Chemistry,,IU/L,laboratory dictionary,carevue,included
+AST,LABEVENTS,50878,Asparate Aminotransferase (AST),Chemistry,,IU/L,laboratory dictionary,carevue,included
+Age,PATIENTS,,PATIENTS,,years,years,PATIENTS/ICUSTAYS,carevue,included
+Albumin,LABEVENTS,50862,Albumin,Chemistry,,g/dL,laboratory dictionary,carevue,included
+BUN,LABEVENTS,51006,Urea Nitrogen,Chemistry,,mg/dL,laboratory dictionary,carevue,included
+Bilirubin,LABEVENTS,50885,"Bilirubin, Total",Chemistry,,mg/dL,laboratory dictionary,carevue,included
+Cholesterol,LABEVENTS,50907,"Cholesterol, Total",Chemistry,,mg/dL,laboratory dictionary,carevue,included
+Creatinine,LABEVENTS,50912,Creatinine,Chemistry,,mg/dL,laboratory dictionary,carevue,included
+DiasABP,CHARTEVENTS,8368,Arterial BP [Diastolic],,,mmHg,carevue,carevue,included
+DiasABP,CHARTEVENTS,8555,Arterial BP #2 [Diastolic],,,mmHg,carevue,carevue,included
+FiO2,CHARTEVENTS,190,FiO2 Set,,,fraction,carevue,carevue,included
+FiO2,CHARTEVENTS,3420,FIO2,,,fraction,carevue,carevue,included
+GCS,CHARTEVENTS,184,Eye Opening,,,score,carevue,carevue,included
+GCS,CHARTEVENTS,454,Motor Response,,,score,carevue,carevue,included
+GCS,CHARTEVENTS,723,Verbal Response,,,score,carevue,carevue,included
+Gender,PATIENTS,,PATIENTS,,binary,binary,PATIENTS/ICUSTAYS,carevue,included
+Glucose,LABEVENTS,50809,Glucose,Blood Gas,,mg/dL,laboratory dictionary,carevue,included
+Glucose,LABEVENTS,50931,Glucose,Chemistry,,mg/dL,laboratory dictionary,carevue,included
+HCO3,LABEVENTS,50803,"Calculated Bicarbonate, Whole Blood",Blood Gas,,mEq/L,laboratory dictionary,carevue,included
+HCO3,LABEVENTS,50882,Bicarbonate,Chemistry,,mEq/L,laboratory dictionary,carevue,included
+HCT,LABEVENTS,50810,"Hematocrit, Calculated",Blood Gas,,%,laboratory dictionary,carevue,included
+HCT,LABEVENTS,51221,Hematocrit,Hematology,,%,laboratory dictionary,carevue,included
+HR,CHARTEVENTS,211,Heart Rate,,,bpm,carevue,carevue,included
+Height,CHARTEVENTS,920,Admit Ht,,,cm,carevue,carevue,included
+Height,CHARTEVENTS,1394,Height Inches,,,cm,carevue,carevue,included
+Height,CHARTEVENTS,3485,Length   Calc   (cm),,,cm,carevue,carevue,included
+Height,CHARTEVENTS,3486,Length in Inches,,,cm,carevue,carevue,included
+Height,CHARTEVENTS,4187,Length Calc Inches,,,cm,carevue,carevue,included
+Height,CHARTEVENTS,4188,Length in cm,,,cm,carevue,carevue,included
+ICUType,ICUSTAYS,,ICUSTAYS,,category,category,PATIENTS/ICUSTAYS,carevue,included
+K,LABEVENTS,50822,"Potassium, Whole Blood",Blood Gas,,mEq/L,laboratory dictionary,carevue,included
+K,LABEVENTS,50971,Potassium,Chemistry,,mEq/L,laboratory dictionary,carevue,included
+Lactate,LABEVENTS,50813,Lactate,Blood Gas,,mmol/L,laboratory dictionary,carevue,included
+MAP,CHARTEVENTS,52,Arterial BP Mean,,,mmHg,carevue,carevue,included
+MAP,CHARTEVENTS,6702,Arterial BP Mean #2,,,mmHg,carevue,carevue,included
+MechVent,CHARTEVENTS,720,Ventilator Mode,,,indicator,carevue,carevue,included
+Mg,LABEVENTS,50960,Magnesium,Chemistry,,mmol/L,laboratory dictionary,carevue,included
+NIDiasABP,CHARTEVENTS,8441,NBP [Diastolic],,,mmHg,carevue,carevue,included
+NIMAP,CHARTEVENTS,456,NBP Mean,,,mmHg,carevue,carevue,included
+NISysABP,CHARTEVENTS,455,NBP [Systolic],,,mmHg,carevue,carevue,included
+Na,LABEVENTS,50824,"Sodium, Whole Blood",Blood Gas,,mEq/L,laboratory dictionary,carevue,included
+Na,LABEVENTS,50983,Sodium,Chemistry,,mEq/L,laboratory dictionary,carevue,included
+PaCO2,LABEVENTS,50818,pCO2,Blood Gas,,mmHg,laboratory dictionary,carevue,included
+PaO2,LABEVENTS,50821,pO2,Blood Gas,,mmHg,laboratory dictionary,carevue,included
+Platelets,LABEVENTS,51265,Platelet Count,Hematology,,10^3/uL,laboratory dictionary,carevue,included
+RespRate,CHARTEVENTS,618,Respiratory Rate,,,breaths/min,carevue,carevue,included
+SaO2,CHARTEVENTS,646,SpO2,,,%,carevue,carevue,included
+SysABP,CHARTEVENTS,51,Arterial BP [Systolic],,,mmHg,carevue,carevue,included
+SysABP,CHARTEVENTS,6701,Arterial BP #2 [Systolic],,,mmHg,carevue,carevue,included
+Temp,CHARTEVENTS,676,Temperature C,,,C,carevue,carevue,included
+Temp,CHARTEVENTS,678,Temperature F,,,C,carevue,carevue,included
+TroponinI,LABEVENTS,51002,Troponin I,Chemistry,,ng/mL,laboratory dictionary,carevue,included
+TroponinT,LABEVENTS,51003,Troponin T,Chemistry,,ng/mL,laboratory dictionary,carevue,included
+Urine,OUTPUTEVENTS,40055,Urine Out Foley,,,mL,carevue,carevue,included
+Urine,OUTPUTEVENTS,40056,Urine Out Lt Nephrostomy,,,mL,carevue,carevue,included
+Urine,OUTPUTEVENTS,40057,Urine Out Rt Nephrostomy,,,mL,carevue,carevue,included
+Urine,OUTPUTEVENTS,40069,Urine Out Void,,,mL,carevue,carevue,included
+Urine,OUTPUTEVENTS,40085,Urine Out Incontinent,,,mL,carevue,carevue,included
+Urine,OUTPUTEVENTS,40086,Drain Out #2 Pigtail,,,mL,carevue,carevue,excluded
+Urine,OUTPUTEVENTS,40094,Urine Out Condom Cath,,,mL,carevue,carevue,included
+Urine,OUTPUTEVENTS,40096,Urine Out Ureteral Stent #1,,,mL,carevue,carevue,included
+Urine,OUTPUTEVENTS,40405,Urine Out Other,,,mL,carevue,carevue,included
+Urine,OUTPUTEVENTS,40428,Urine Out Straight Cath,,,mL,carevue,carevue,included
+Urine,OUTPUTEVENTS,40473,Urine Out IleoConduit,,,mL,carevue,carevue,included
+Urine,OUTPUTEVENTS,40651,Urine Out Ureteral Stent #2,,,mL,carevue,carevue,included
+Urine,OUTPUTEVENTS,40715,Urine Out Suprapubic,,,mL,carevue,carevue,included
+Urine,OUTPUTEVENTS,43175,Urine .,,,mL,carevue,carevue,included
+Urine,OUTPUTEVENTS,226557,R Ureteral Stent,Output,mL,mL,metavision,carevue,included
+Urine,OUTPUTEVENTS,226558,L Ureteral Stent,Output,mL,mL,metavision,carevue,included
+Urine,OUTPUTEVENTS,226559,Foley,Output,mL,mL,metavision,carevue,included
+Urine,OUTPUTEVENTS,226560,Void,Output,mL,mL,metavision,carevue,included
+Urine,OUTPUTEVENTS,226563,Suprapubic,Output,mL,mL,metavision,carevue,included
+Urine,OUTPUTEVENTS,226564,R Nephrostomy,Output,mL,mL,metavision,carevue,included
+Urine,OUTPUTEVENTS,226565,L Nephrostomy,Output,mL,mL,metavision,carevue,included
+Urine,OUTPUTEVENTS,226584,Ileoconduit,Output,mL,mL,metavision,carevue,included
+WBC,LABEVENTS,51300,WBC Count,Hematology,,10^3/uL,laboratory dictionary,carevue,included
+WBC,LABEVENTS,51301,White Blood Cells,Hematology,,10^3/uL,laboratory dictionary,carevue,included
+Weight,CHARTEVENTS,762,Admit Wt,,,kg,carevue,carevue,included
+Weight,CHARTEVENTS,763,Daily Weight,,,kg,carevue,carevue,included
+Weight,CHARTEVENTS,3580,Present Weight  (kg),,,kg,carevue,carevue,included
+Weight,CHARTEVENTS,3581,Present Weight  (lb),,,kg,carevue,carevue,included
+Weight,CHARTEVENTS,3693,Weight Kg,,,kg,carevue,carevue,included
+pH,LABEVENTS,50820,pH,Blood Gas,,pH units,laboratory dictionary,carevue,included

@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "icu-mortality-prediction"
+version = "0.1.0"
+description = "Analysis code for physiological trajectories and observation patterns in ICU mortality prediction"
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "matplotlib==3.10.3",
+    "numpy==2.2.6",
+    "pandas==2.3.1",
+    "pyarrow==23.0.0",
+    "scikit-learn==1.6.1",
+    "scipy==1.15.3",
+    "statsmodels==0.14.4",
+    "threadpoolctl==3.6.0",
+    "xgboost==3.0.5"
+]
+
+[project.optional-dependencies]
+notebooks = ["jupyterlab==4.6.3", "ipykernel==7.3.0", "nbclient==0.11.0", "nbformat==5.11.1"]
+dev = ["pytest==9.1.1", "ruff==0.16.5", "nbformat==5.11.1"]
+workflow = ["dagster==1.13.25", "dagster-webserver==1.13.25", "nbclient>=0.10.2", "nbformat>=5.10.4", "ipykernel>=6.29.5"]
+
+[tool.setuptools]
+packages = ["study"]
+package-dir = {study = "src"}
+
+[tool.ruff]
+target-version = "py312"
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = ["E501"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["study"]
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:cacheprovider"

@@ -1,0 +1,11 @@
+/data/
+/results/
+/work/
+
+.ipynb_checkpoints/
+__pycache__/
+*.egg-info/
+.ruff_cache/
+.pytest_cache/
+.DS_Store
+.venv/

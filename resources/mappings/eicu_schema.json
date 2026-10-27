@@ -1,0 +1,71 @@
+{
+  "events": {
+    "vitalperiodic": {
+      "stay": "patientunitstayid",
+      "time_kind": "offset",
+      "time": "observationoffset",
+      "wide": true
+    },
+    "vitalaperiodic": {
+      "stay": "patientunitstayid",
+      "time_kind": "offset",
+      "time": "observationoffset",
+      "wide": true
+    },
+    "lab": {
+      "stay": "patientunitstayid",
+      "time_kind": "offset",
+      "time": "labresultoffset",
+      "keys": [
+        "labname",
+        "labtypeid"
+      ],
+      "value": "labresult",
+      "unit": "labmeasurenamesystem"
+    },
+    "nursecharting": {
+      "stay": "patientunitstayid",
+      "time_kind": "offset",
+      "time": "nursingchartoffset",
+      "available": "nursingchartentryoffset",
+      "keys": [
+        "nursingchartcelltypecat",
+        "nursingchartcelltypevallabel",
+        "nursingchartcelltypevalname"
+      ],
+      "value": "nursingchartvalue"
+    },
+    "respiratorycharting": {
+      "stay": "patientunitstayid",
+      "time_kind": "offset",
+      "time": "respchartoffset",
+      "available": "respchartentryoffset",
+      "keys": [
+        "respcharttypecat",
+        "respchartvaluelabel"
+      ],
+      "value": "respchartvalue"
+    },
+    "intakeoutput": {
+      "stay": "patientunitstayid",
+      "time_kind": "offset",
+      "time": "intakeoutputoffset",
+      "available": "intakeoutputentryoffset",
+      "keys": [
+        "cellpath",
+        "celllabel"
+      ],
+      "value": "cellvaluenumeric"
+    }
+  },
+  "unit_mapping": {
+    "Cardiac ICU": 1,
+    "CSICU": 2,
+    "CTICU": 2,
+    "Med-Surg ICU": 3,
+    "MICU": 3,
+    "SICU": 4,
+    "CCU-CTICU": null,
+    "Neuro ICU": null
+  }
+}

@@ -1,0 +1,45 @@
+table,key,unit,canonical_variable,factor,offset
+lab,"[""bedside glucose"",""4""]",mg/dL,Glucose,1.0,0.0
+lab,"[""glucose"",""1""]",mg/dL,Glucose,1.0,0.0
+lab,"[""potassium"",""1""]",mmol/L,K,1.0,0.0
+lab,"[""sodium"",""1""]",mmol/L,Na,1.0,0.0
+lab,"[""creatinine"",""1""]",mg/dL,Creatinine,1.0,0.0
+lab,"[""BUN"",""1""]",mg/dL,BUN,1.0,0.0
+lab,"[""bicarbonate"",""1""]",mmol/L,HCO3,1.0,0.0
+lab,"[""HCO3"",""7""]",mmol/L,HCO3,1.0,0.0
+lab,"[""platelets x 1000"",""3""]",K/mcL,Platelets,1.0,0.0
+lab,"[""WBC x 1000"",""3""]",K/mcL,WBC,1.0,0.0
+lab,"[""Hct"",""3""]",%,HCT,1.0,0.0
+lab,"[""magnesium"",""1""]",mg/dL,Mg,0.4114,0.0
+lab,"[""albumin"",""1""]",g/dL,Albumin,1.0,0.0
+lab,"[""AST (SGOT)"",""1""]",Units/L,AST,1.0,0.0
+lab,"[""ALT (SGPT)"",""1""]",Units/L,ALT,1.0,0.0
+lab,"[""alkaline phos."",""1""]",Units/L,ALP,1.0,0.0
+lab,"[""total bilirubin"",""1""]",mg/dL,Bilirubin,1.0,0.0
+lab,"[""paO2"",""7""]",mm Hg,PaO2,1.0,0.0
+lab,"[""paCO2"",""7""]",mm Hg,PaCO2,1.0,0.0
+lab,"[""pH"",""7""]",,pH,1.0,0.0
+lab,"[""FiO2"",""7""]",%,FiO2,1.0,0.0
+lab,"[""lactate"",""1""]",mmol/L,Lactate,1.0,0.0
+lab,"[""troponin - I"",""1""]",ng/mL,TroponinI,1.0,0.0
+lab,"[""troponin - T"",""1""]",ng/mL,TroponinT,1.0,0.0
+lab,"[""total cholesterol"",""1""]",mg/dL,Cholesterol,1.0,0.0
+nursecharting,"[""Vital Signs"",""Heart Rate"",""Heart Rate""]",,HR,1.0,0.0
+nursecharting,"[""Vital Signs"",""Respiratory Rate"",""Respiratory Rate""]",,RespRate,1.0,0.0
+nursecharting,"[""Vital Signs"",""O2 Saturation"",""O2 Saturation""]",,SaO2,1.0,0.0
+nursecharting,"[""Vital Signs"",""Non-Invasive BP"",""Non-Invasive BP Systolic""]",,NISysABP,1.0,0.0
+nursecharting,"[""Vital Signs"",""Non-Invasive BP"",""Non-Invasive BP Diastolic""]",,NIDiasABP,1.0,0.0
+nursecharting,"[""Vital Signs"",""Non-Invasive BP"",""Non-Invasive BP Mean""]",,NIMAP,1.0,0.0
+nursecharting,"[""Vital Signs"",""Invasive BP"",""Invasive BP Systolic""]",,SysABP,1.0,0.0
+nursecharting,"[""Vital Signs"",""Invasive BP"",""Invasive BP Diastolic""]",,DiasABP,1.0,0.0
+nursecharting,"[""Vital Signs"",""Invasive BP"",""Invasive BP Mean""]",,MAP,1.0,0.0
+nursecharting,"[""Vital Signs"",""Temperature"",""Temperature (C)""]",,Temp,1.0,0.0
+nursecharting,"[""Vital Signs"",""Temperature"",""Temperature (F)""]",,Temp,0.5555555555555556,-17.77777777777778
+nursecharting,"[""Scores"",""Glasgow coma score"",""Eyes""]",,GCSEye,1.0,0.0
+nursecharting,"[""Scores"",""Glasgow coma score"",""Verbal""]",,GCSVerbal,1.0,0.0
+nursecharting,"[""Scores"",""Glasgow coma score"",""Motor""]",,GCSMotor,1.0,0.0
+respiratorycharting,"[""respFlowSettings"",""FiO2""]",,FiO2,1.0,0.0
+respiratorycharting,"[""respFlowCareData"",""FIO2 (%)""]",,FiO2,1.0,0.0
+respiratorycharting,"[""respFlowCareData"",""FiO2""]",,FiO2,1.0,0.0
+intakeoutput,"[""flowsheet|Flowsheet Cell Labels|I&O|Output (ml)|Urine"",""Urine""]",,Urine,1.0,0.0
+intakeoutput,"[""flowsheet|Flowsheet Cell Labels|I&O|Weight|Bodyweight (kg)"",""Bodyweight (kg)""]",,Weight,1.0,0.0

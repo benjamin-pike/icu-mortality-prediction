@@ -1,0 +1,941 @@
+feature,source_variable,axis,statistic,units,primary_axis_feature,clinical_role,observation_process_family,first_tier
+Age,Age,static,baseline,years,True,physiology,,R0
+Age_missing,Age,static,baseline,indicator,False,physiology,,R4
+Gender,Gender,static,baseline,binary indicator,True,physiology,,R0
+Gender_missing,Gender,static,baseline,indicator,False,physiology,,R4
+Height,Height,static,baseline,cm,True,physiology,,R0
+Height_missing,Height,static,baseline,indicator,False,physiology,,R4
+ICUType,ICUType,static,baseline,category,True,physiology,,R0
+ICUType_missing,ICUType,static,baseline,indicator,False,physiology,,R4
+Na_observed,Na,observation_process,measurement process,indicator,True,observation_process,availability,R3
+Na_count,Na,observation_process,measurement process,count,True,observation_process,intensity,R3
+Na_valid_count,Na,observation_process,measurement process,count,False,observation_process,,R4
+Na_count_d1,Na,observation_process,measurement process,count,False,observation_process,,R4
+Na_count_d2,Na,observation_process,measurement process,count,False,observation_process,,R4
+Na_count_change,Na,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+Na_first_measurement_hour,Na,observation_process,measurement process,hours,False,observation_process,,R4
+Na_last_measurement_hour,Na,observation_process,measurement process,hours,False,observation_process,,R4
+Na_hours_since_last_measurement,Na,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+Na_median_intermeasurement_interval,Na,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+Na_mean,Na,severity,mean,mEq/L,True,physiology,,R2
+Na_median,Na,severity,median,mEq/L,False,physiology,,R4
+Na_min,Na,severity,min,mEq/L,True,physiology,,R2
+Na_max,Na,severity,max,mEq/L,True,physiology,,R2
+Na_first,Na,severity,first,mEq/L,False,physiology,,R4
+Na_last,Na,severity,last,mEq/L,False,physiology,,R1
+Na_trend,Na,trajectory,trend,mEq/L,False,physiology,,R4
+Na_sd,Na,variability,sd,mEq/L,True,physiology,,R2
+Na_range,Na,variability,range,mEq/L,False,physiology,,R4
+Na_iqr,Na,variability,iqr,mEq/L,True,physiology,,R2
+Na_mad,Na,variability,mad,mEq/L,True,physiology,,R2
+Na_slope,Na,trajectory,slope,mEq/L/hour,True,physiology,,R2
+Na_mean_d1,Na,severity,d1,mEq/L,False,physiology,,R4
+Na_mean_d2,Na,severity,d2,mEq/L,False,physiology,,R4
+Na_d2_minus_d1,Na,trajectory,d1,mEq/L,True,physiology,,R2
+SaO2_observed,SaO2,observation_process,measurement process,indicator,True,observation_process,availability,R3
+SaO2_count,SaO2,observation_process,measurement process,count,True,observation_process,intensity,R3
+SaO2_valid_count,SaO2,observation_process,measurement process,count,False,observation_process,,R4
+SaO2_count_d1,SaO2,observation_process,measurement process,count,False,observation_process,,R4
+SaO2_count_d2,SaO2,observation_process,measurement process,count,False,observation_process,,R4
+SaO2_count_change,SaO2,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+SaO2_first_measurement_hour,SaO2,observation_process,measurement process,hours,False,observation_process,,R4
+SaO2_last_measurement_hour,SaO2,observation_process,measurement process,hours,False,observation_process,,R4
+SaO2_hours_since_last_measurement,SaO2,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+SaO2_median_intermeasurement_interval,SaO2,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+SaO2_mean_d1,SaO2,severity,d1,%,False,physiology,,R4
+SaO2_mean_d2,SaO2,severity,d2,%,False,physiology,,R4
+SaO2_d2_minus_d1,SaO2,trajectory,d1,%,True,physiology,,R2
+Lactate_observed,Lactate,observation_process,measurement process,indicator,True,observation_process,availability,R3
+Lactate_count,Lactate,observation_process,measurement process,count,True,observation_process,intensity,R3
+Lactate_valid_count,Lactate,observation_process,measurement process,count,False,observation_process,,R4
+Lactate_count_d1,Lactate,observation_process,measurement process,count,False,observation_process,,R4
+Lactate_count_d2,Lactate,observation_process,measurement process,count,False,observation_process,,R4
+Lactate_count_change,Lactate,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+Lactate_first_measurement_hour,Lactate,observation_process,measurement process,hours,False,observation_process,,R4
+Lactate_last_measurement_hour,Lactate,observation_process,measurement process,hours,False,observation_process,,R4
+Lactate_hours_since_last_measurement,Lactate,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+Lactate_median_intermeasurement_interval,Lactate,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+Lactate_mean_d1,Lactate,severity,d1,mmol/L,False,physiology,,R4
+Lactate_mean_d2,Lactate,severity,d2,mmol/L,False,physiology,,R4
+Lactate_d2_minus_d1,Lactate,trajectory,d1,mmol/L,True,physiology,,R2
+NIMAP_observed,NIMAP,observation_process,measurement process,indicator,True,observation_process,availability,R3
+NIMAP_count,NIMAP,observation_process,measurement process,count,True,observation_process,intensity,R3
+NIMAP_valid_count,NIMAP,observation_process,measurement process,count,False,observation_process,,R4
+NIMAP_count_d1,NIMAP,observation_process,measurement process,count,False,observation_process,,R4
+NIMAP_count_d2,NIMAP,observation_process,measurement process,count,False,observation_process,,R4
+NIMAP_count_change,NIMAP,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+NIMAP_first_measurement_hour,NIMAP,observation_process,measurement process,hours,False,observation_process,,R4
+NIMAP_last_measurement_hour,NIMAP,observation_process,measurement process,hours,False,observation_process,,R4
+NIMAP_hours_since_last_measurement,NIMAP,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+NIMAP_median_intermeasurement_interval,NIMAP,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+NIMAP_mean,NIMAP,severity,mean,mmHg,True,physiology,,R2
+NIMAP_median,NIMAP,severity,median,mmHg,False,physiology,,R4
+NIMAP_min,NIMAP,severity,min,mmHg,True,physiology,,R2
+NIMAP_max,NIMAP,severity,max,mmHg,True,physiology,,R2
+NIMAP_first,NIMAP,severity,first,mmHg,False,physiology,,R4
+NIMAP_last,NIMAP,severity,last,mmHg,False,physiology,,R0
+NIMAP_trend,NIMAP,trajectory,trend,mmHg,False,physiology,,R4
+NIMAP_sd,NIMAP,variability,sd,mmHg,True,physiology,,R2
+NIMAP_range,NIMAP,variability,range,mmHg,False,physiology,,R4
+NIMAP_iqr,NIMAP,variability,iqr,mmHg,True,physiology,,R2
+NIMAP_mad,NIMAP,variability,mad,mmHg,True,physiology,,R2
+NIMAP_slope,NIMAP,trajectory,slope,mmHg/hour,True,physiology,,R2
+NIMAP_mean_d1,NIMAP,severity,d1,mmHg,False,physiology,,R4
+NIMAP_mean_d2,NIMAP,severity,d2,mmHg,False,physiology,,R4
+NIMAP_d2_minus_d1,NIMAP,trajectory,d1,mmHg,True,physiology,,R2
+TroponinI_observed,TroponinI,observation_process,measurement process,indicator,True,observation_process,availability,R3
+TroponinI_count,TroponinI,observation_process,measurement process,count,True,observation_process,intensity,R3
+TroponinI_valid_count,TroponinI,observation_process,measurement process,count,False,observation_process,,R4
+TroponinI_count_d1,TroponinI,observation_process,measurement process,count,False,observation_process,,R4
+TroponinI_count_d2,TroponinI,observation_process,measurement process,count,False,observation_process,,R4
+TroponinI_count_change,TroponinI,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+TroponinI_first_measurement_hour,TroponinI,observation_process,measurement process,hours,False,observation_process,,R4
+TroponinI_last_measurement_hour,TroponinI,observation_process,measurement process,hours,False,observation_process,,R4
+TroponinI_hours_since_last_measurement,TroponinI,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+TroponinI_median_intermeasurement_interval,TroponinI,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+TroponinI_mean_d1,TroponinI,severity,d1,ng/mL,False,physiology,,R4
+TroponinI_mean_d2,TroponinI,severity,d2,ng/mL,False,physiology,,R4
+TroponinI_d2_minus_d1,TroponinI,trajectory,d1,ng/mL,True,physiology,,R2
+Temp_observed,Temp,observation_process,measurement process,indicator,True,observation_process,availability,R3
+Temp_count,Temp,observation_process,measurement process,count,True,observation_process,intensity,R3
+Temp_valid_count,Temp,observation_process,measurement process,count,False,observation_process,,R4
+Temp_count_d1,Temp,observation_process,measurement process,count,False,observation_process,,R4
+Temp_count_d2,Temp,observation_process,measurement process,count,False,observation_process,,R4
+Temp_count_change,Temp,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+Temp_first_measurement_hour,Temp,observation_process,measurement process,hours,False,observation_process,,R4
+Temp_last_measurement_hour,Temp,observation_process,measurement process,hours,False,observation_process,,R4
+Temp_hours_since_last_measurement,Temp,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+Temp_median_intermeasurement_interval,Temp,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+Temp_mean,Temp,severity,mean,C,True,physiology,,R2
+Temp_median,Temp,severity,median,C,False,physiology,,R4
+Temp_min,Temp,severity,min,C,True,physiology,,R2
+Temp_max,Temp,severity,max,C,True,physiology,,R2
+Temp_first,Temp,severity,first,C,False,physiology,,R4
+Temp_last,Temp,severity,last,C,False,physiology,,R0
+Temp_trend,Temp,trajectory,trend,C,False,physiology,,R4
+Temp_sd,Temp,variability,sd,C,True,physiology,,R2
+Temp_range,Temp,variability,range,C,False,physiology,,R4
+Temp_iqr,Temp,variability,iqr,C,True,physiology,,R2
+Temp_mad,Temp,variability,mad,C,True,physiology,,R2
+Temp_slope,Temp,trajectory,slope,C/hour,True,physiology,,R2
+Temp_mean_d1,Temp,severity,d1,C,False,physiology,,R4
+Temp_mean_d2,Temp,severity,d2,C,False,physiology,,R4
+Temp_d2_minus_d1,Temp,trajectory,d1,C,True,physiology,,R2
+DiasABP_observed,DiasABP,observation_process,measurement process,indicator,True,observation_process,availability,R3
+DiasABP_count,DiasABP,observation_process,measurement process,count,True,observation_process,intensity,R3
+DiasABP_valid_count,DiasABP,observation_process,measurement process,count,False,observation_process,,R4
+DiasABP_count_d1,DiasABP,observation_process,measurement process,count,False,observation_process,,R4
+DiasABP_count_d2,DiasABP,observation_process,measurement process,count,False,observation_process,,R4
+DiasABP_count_change,DiasABP,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+DiasABP_first_measurement_hour,DiasABP,observation_process,measurement process,hours,False,observation_process,,R4
+DiasABP_last_measurement_hour,DiasABP,observation_process,measurement process,hours,False,observation_process,,R4
+DiasABP_hours_since_last_measurement,DiasABP,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+DiasABP_median_intermeasurement_interval,DiasABP,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+DiasABP_mean_d1,DiasABP,severity,d1,mmHg,False,physiology,,R4
+DiasABP_mean_d2,DiasABP,severity,d2,mmHg,False,physiology,,R4
+DiasABP_d2_minus_d1,DiasABP,trajectory,d1,mmHg,True,physiology,,R2
+Mg_observed,Mg,observation_process,measurement process,indicator,True,observation_process,availability,R3
+Mg_count,Mg,observation_process,measurement process,count,True,observation_process,intensity,R3
+Mg_valid_count,Mg,observation_process,measurement process,count,False,observation_process,,R4
+Mg_count_d1,Mg,observation_process,measurement process,count,False,observation_process,,R4
+Mg_count_d2,Mg,observation_process,measurement process,count,False,observation_process,,R4
+Mg_count_change,Mg,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+Mg_first_measurement_hour,Mg,observation_process,measurement process,hours,False,observation_process,,R4
+Mg_last_measurement_hour,Mg,observation_process,measurement process,hours,False,observation_process,,R4
+Mg_hours_since_last_measurement,Mg,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+Mg_median_intermeasurement_interval,Mg,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+Mg_mean,Mg,severity,mean,mmol/L,True,physiology,,R2
+Mg_median,Mg,severity,median,mmol/L,False,physiology,,R4
+Mg_min,Mg,severity,min,mmol/L,True,physiology,,R2
+Mg_max,Mg,severity,max,mmol/L,True,physiology,,R2
+Mg_first,Mg,severity,first,mmol/L,False,physiology,,R4
+Mg_last,Mg,severity,last,mmol/L,False,physiology,,R1
+Mg_trend,Mg,trajectory,trend,mmol/L,False,physiology,,R4
+Mg_sd,Mg,variability,sd,mmol/L,True,physiology,,R2
+Mg_range,Mg,variability,range,mmol/L,False,physiology,,R4
+Mg_iqr,Mg,variability,iqr,mmol/L,True,physiology,,R2
+Mg_mad,Mg,variability,mad,mmol/L,True,physiology,,R2
+Mg_slope,Mg,trajectory,slope,mmol/L/hour,True,physiology,,R2
+Mg_mean_d1,Mg,severity,d1,mmol/L,False,physiology,,R4
+Mg_mean_d2,Mg,severity,d2,mmol/L,False,physiology,,R4
+Mg_d2_minus_d1,Mg,trajectory,d1,mmol/L,True,physiology,,R2
+HR_observed,HR,observation_process,measurement process,indicator,True,observation_process,availability,R3
+HR_count,HR,observation_process,measurement process,count,True,observation_process,intensity,R3
+HR_valid_count,HR,observation_process,measurement process,count,False,observation_process,,R4
+HR_count_d1,HR,observation_process,measurement process,count,False,observation_process,,R4
+HR_count_d2,HR,observation_process,measurement process,count,False,observation_process,,R4
+HR_count_change,HR,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+HR_first_measurement_hour,HR,observation_process,measurement process,hours,False,observation_process,,R4
+HR_last_measurement_hour,HR,observation_process,measurement process,hours,False,observation_process,,R4
+HR_hours_since_last_measurement,HR,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+HR_median_intermeasurement_interval,HR,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+HR_mean,HR,severity,mean,bpm,True,physiology,,R2
+HR_median,HR,severity,median,bpm,False,physiology,,R4
+HR_min,HR,severity,min,bpm,True,physiology,,R2
+HR_max,HR,severity,max,bpm,True,physiology,,R2
+HR_first,HR,severity,first,bpm,False,physiology,,R4
+HR_last,HR,severity,last,bpm,False,physiology,,R0
+HR_trend,HR,trajectory,trend,bpm,False,physiology,,R4
+HR_sd,HR,variability,sd,bpm,True,physiology,,R2
+HR_range,HR,variability,range,bpm,False,physiology,,R4
+HR_iqr,HR,variability,iqr,bpm,True,physiology,,R2
+HR_mad,HR,variability,mad,bpm,True,physiology,,R2
+HR_slope,HR,trajectory,slope,bpm/hour,True,physiology,,R2
+HR_mean_d1,HR,severity,d1,bpm,False,physiology,,R4
+HR_mean_d2,HR,severity,d2,bpm,False,physiology,,R4
+HR_d2_minus_d1,HR,trajectory,d1,bpm,True,physiology,,R2
+FiO2_observed,FiO2,observation_process,measurement process,indicator,True,observation_process,availability,R3
+FiO2_count,FiO2,observation_process,measurement process,count,True,observation_process,intensity,R3
+FiO2_valid_count,FiO2,observation_process,measurement process,count,False,observation_process,,R4
+FiO2_count_d1,FiO2,observation_process,measurement process,count,False,observation_process,,R4
+FiO2_count_d2,FiO2,observation_process,measurement process,count,False,observation_process,,R4
+FiO2_count_change,FiO2,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+FiO2_first_measurement_hour,FiO2,observation_process,measurement process,hours,False,observation_process,,R4
+FiO2_last_measurement_hour,FiO2,observation_process,measurement process,hours,False,observation_process,,R4
+FiO2_hours_since_last_measurement,FiO2,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+FiO2_median_intermeasurement_interval,FiO2,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+FiO2_mean_d1,FiO2,severity,d1,fraction,False,physiology,,R4
+FiO2_mean_d2,FiO2,severity,d2,fraction,False,physiology,,R4
+FiO2_d2_minus_d1,FiO2,trajectory,d1,fraction,True,physiology,,R2
+Urine_observed,Urine,observation_process,measurement process,indicator,True,observation_process,availability,R3
+Urine_count,Urine,observation_process,measurement process,count,True,observation_process,intensity,R3
+Urine_valid_count,Urine,observation_process,measurement process,count,False,observation_process,,R4
+Urine_count_d1,Urine,observation_process,measurement process,count,False,observation_process,,R4
+Urine_count_d2,Urine,observation_process,measurement process,count,False,observation_process,,R4
+Urine_count_change,Urine,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+Urine_first_measurement_hour,Urine,observation_process,measurement process,hours,False,observation_process,,R4
+Urine_last_measurement_hour,Urine,observation_process,measurement process,hours,False,observation_process,,R4
+Urine_hours_since_last_measurement,Urine,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+Urine_median_intermeasurement_interval,Urine,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+Urine_mean,Urine,severity,mean,mL,True,physiology,,R2
+Urine_median,Urine,severity,median,mL,False,physiology,,R4
+Urine_min,Urine,severity,min,mL,True,physiology,,R2
+Urine_max,Urine,severity,max,mL,True,physiology,,R2
+Urine_first,Urine,severity,first,mL,False,physiology,,R4
+Urine_last,Urine,severity,last,mL,False,physiology,,R4
+Urine_trend,Urine,trajectory,trend,mL,False,physiology,,R4
+Urine_sd,Urine,variability,sd,mL,True,physiology,,R2
+Urine_range,Urine,variability,range,mL,False,physiology,,R4
+Urine_iqr,Urine,variability,iqr,mL,True,physiology,,R2
+Urine_mad,Urine,variability,mad,mL,True,physiology,,R2
+Urine_slope,Urine,trajectory,slope,mL/hour,True,physiology,,R2
+Urine_mean_d1,Urine,severity,d1,mL,False,physiology,,R4
+Urine_mean_d2,Urine,severity,d2,mL,False,physiology,,R4
+Urine_d2_minus_d1,Urine,trajectory,d1,mL,True,physiology,,R2
+Urine_total,Urine,severity,total,mL,False,physiology,,R1
+Urine_total_d1,Urine,severity,d1,mL,False,physiology,,R4
+Urine_total_d2,Urine,severity,d2,mL,False,physiology,,R4
+MAP_observed,MAP,observation_process,measurement process,indicator,True,observation_process,availability,R3
+MAP_count,MAP,observation_process,measurement process,count,True,observation_process,intensity,R3
+MAP_valid_count,MAP,observation_process,measurement process,count,False,observation_process,,R4
+MAP_count_d1,MAP,observation_process,measurement process,count,False,observation_process,,R4
+MAP_count_d2,MAP,observation_process,measurement process,count,False,observation_process,,R4
+MAP_count_change,MAP,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+MAP_first_measurement_hour,MAP,observation_process,measurement process,hours,False,observation_process,,R4
+MAP_last_measurement_hour,MAP,observation_process,measurement process,hours,False,observation_process,,R4
+MAP_hours_since_last_measurement,MAP,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+MAP_median_intermeasurement_interval,MAP,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+MAP_mean_d1,MAP,severity,d1,mmHg,False,physiology,,R4
+MAP_mean_d2,MAP,severity,d2,mmHg,False,physiology,,R4
+MAP_d2_minus_d1,MAP,trajectory,d1,mmHg,True,physiology,,R2
+MechVent_observed,MechVent,observation_process,measurement process,indicator,True,observation_process,availability,R3
+MechVent_count,MechVent,observation_process,measurement process,count,True,observation_process,intensity,R3
+MechVent_valid_count,MechVent,observation_process,measurement process,count,False,observation_process,,R4
+MechVent_count_d1,MechVent,observation_process,measurement process,count,False,observation_process,,R4
+MechVent_count_d2,MechVent,observation_process,measurement process,count,False,observation_process,,R4
+MechVent_count_change,MechVent,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+MechVent_first_measurement_hour,MechVent,observation_process,measurement process,hours,False,observation_process,,R4
+MechVent_last_measurement_hour,MechVent,observation_process,measurement process,hours,False,observation_process,,R4
+MechVent_hours_since_last_measurement,MechVent,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+MechVent_median_intermeasurement_interval,MechVent,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+MechVent_ever,MechVent,severity,ever,indicator,False,physiology,,R1
+MechVent_first,MechVent,severity,first,indicator,False,physiology,,R4
+MechVent_last,MechVent,severity,last,indicator,False,physiology,,R4
+MechVent_fraction_positive,MechVent,severity,positive,dimensionless,False,physiology,,R4
+Glucose_observed,Glucose,observation_process,measurement process,indicator,True,observation_process,availability,R3
+Glucose_count,Glucose,observation_process,measurement process,count,True,observation_process,intensity,R3
+Glucose_valid_count,Glucose,observation_process,measurement process,count,False,observation_process,,R4
+Glucose_count_d1,Glucose,observation_process,measurement process,count,False,observation_process,,R4
+Glucose_count_d2,Glucose,observation_process,measurement process,count,False,observation_process,,R4
+Glucose_count_change,Glucose,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+Glucose_first_measurement_hour,Glucose,observation_process,measurement process,hours,False,observation_process,,R4
+Glucose_last_measurement_hour,Glucose,observation_process,measurement process,hours,False,observation_process,,R4
+Glucose_hours_since_last_measurement,Glucose,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+Glucose_median_intermeasurement_interval,Glucose,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+Glucose_mean,Glucose,severity,mean,mg/dL,True,physiology,,R2
+Glucose_median,Glucose,severity,median,mg/dL,False,physiology,,R4
+Glucose_min,Glucose,severity,min,mg/dL,True,physiology,,R2
+Glucose_max,Glucose,severity,max,mg/dL,True,physiology,,R2
+Glucose_first,Glucose,severity,first,mg/dL,False,physiology,,R4
+Glucose_last,Glucose,severity,last,mg/dL,False,physiology,,R1
+Glucose_trend,Glucose,trajectory,trend,mg/dL,False,physiology,,R4
+Glucose_sd,Glucose,variability,sd,mg/dL,True,physiology,,R2
+Glucose_range,Glucose,variability,range,mg/dL,False,physiology,,R4
+Glucose_iqr,Glucose,variability,iqr,mg/dL,True,physiology,,R2
+Glucose_mad,Glucose,variability,mad,mg/dL,True,physiology,,R2
+Glucose_slope,Glucose,trajectory,slope,mg/dL/hour,True,physiology,,R2
+Glucose_mean_d1,Glucose,severity,d1,mg/dL,False,physiology,,R4
+Glucose_mean_d2,Glucose,severity,d2,mg/dL,False,physiology,,R4
+Glucose_d2_minus_d1,Glucose,trajectory,d1,mg/dL,True,physiology,,R2
+Creatinine_observed,Creatinine,observation_process,measurement process,indicator,True,observation_process,availability,R3
+Creatinine_count,Creatinine,observation_process,measurement process,count,True,observation_process,intensity,R3
+Creatinine_valid_count,Creatinine,observation_process,measurement process,count,False,observation_process,,R4
+Creatinine_count_d1,Creatinine,observation_process,measurement process,count,False,observation_process,,R4
+Creatinine_count_d2,Creatinine,observation_process,measurement process,count,False,observation_process,,R4
+Creatinine_count_change,Creatinine,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+Creatinine_first_measurement_hour,Creatinine,observation_process,measurement process,hours,False,observation_process,,R4
+Creatinine_last_measurement_hour,Creatinine,observation_process,measurement process,hours,False,observation_process,,R4
+Creatinine_hours_since_last_measurement,Creatinine,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+Creatinine_median_intermeasurement_interval,Creatinine,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+Creatinine_mean,Creatinine,severity,mean,mg/dL,True,physiology,,R2
+Creatinine_median,Creatinine,severity,median,mg/dL,False,physiology,,R4
+Creatinine_min,Creatinine,severity,min,mg/dL,True,physiology,,R2
+Creatinine_max,Creatinine,severity,max,mg/dL,True,physiology,,R2
+Creatinine_first,Creatinine,severity,first,mg/dL,False,physiology,,R4
+Creatinine_last,Creatinine,severity,last,mg/dL,False,physiology,,R1
+Creatinine_trend,Creatinine,trajectory,trend,mg/dL,False,physiology,,R4
+Creatinine_sd,Creatinine,variability,sd,mg/dL,True,physiology,,R2
+Creatinine_range,Creatinine,variability,range,mg/dL,False,physiology,,R4
+Creatinine_iqr,Creatinine,variability,iqr,mg/dL,True,physiology,,R2
+Creatinine_mad,Creatinine,variability,mad,mg/dL,True,physiology,,R2
+Creatinine_slope,Creatinine,trajectory,slope,mg/dL/hour,True,physiology,,R2
+Creatinine_mean_d1,Creatinine,severity,d1,mg/dL,False,physiology,,R4
+Creatinine_mean_d2,Creatinine,severity,d2,mg/dL,False,physiology,,R4
+Creatinine_d2_minus_d1,Creatinine,trajectory,d1,mg/dL,True,physiology,,R2
+Platelets_observed,Platelets,observation_process,measurement process,indicator,True,observation_process,availability,R3
+Platelets_count,Platelets,observation_process,measurement process,count,True,observation_process,intensity,R3
+Platelets_valid_count,Platelets,observation_process,measurement process,count,False,observation_process,,R4
+Platelets_count_d1,Platelets,observation_process,measurement process,count,False,observation_process,,R4
+Platelets_count_d2,Platelets,observation_process,measurement process,count,False,observation_process,,R4
+Platelets_count_change,Platelets,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+Platelets_first_measurement_hour,Platelets,observation_process,measurement process,hours,False,observation_process,,R4
+Platelets_last_measurement_hour,Platelets,observation_process,measurement process,hours,False,observation_process,,R4
+Platelets_hours_since_last_measurement,Platelets,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+Platelets_median_intermeasurement_interval,Platelets,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+Platelets_mean,Platelets,severity,mean,10^3/uL,True,physiology,,R2
+Platelets_median,Platelets,severity,median,10^3/uL,False,physiology,,R4
+Platelets_min,Platelets,severity,min,10^3/uL,True,physiology,,R2
+Platelets_max,Platelets,severity,max,10^3/uL,True,physiology,,R2
+Platelets_first,Platelets,severity,first,10^3/uL,False,physiology,,R4
+Platelets_last,Platelets,severity,last,10^3/uL,False,physiology,,R1
+Platelets_trend,Platelets,trajectory,trend,10^3/uL,False,physiology,,R4
+Platelets_sd,Platelets,variability,sd,10^3/uL,True,physiology,,R2
+Platelets_range,Platelets,variability,range,10^3/uL,False,physiology,,R4
+Platelets_iqr,Platelets,variability,iqr,10^3/uL,True,physiology,,R2
+Platelets_mad,Platelets,variability,mad,10^3/uL,True,physiology,,R2
+Platelets_slope,Platelets,trajectory,slope,10^3/uL/hour,True,physiology,,R2
+Platelets_mean_d1,Platelets,severity,d1,10^3/uL,False,physiology,,R4
+Platelets_mean_d2,Platelets,severity,d2,10^3/uL,False,physiology,,R4
+Platelets_d2_minus_d1,Platelets,trajectory,d1,10^3/uL,True,physiology,,R2
+ALT_observed,ALT,observation_process,measurement process,indicator,True,observation_process,availability,R3
+ALT_count,ALT,observation_process,measurement process,count,True,observation_process,intensity,R3
+ALT_valid_count,ALT,observation_process,measurement process,count,False,observation_process,,R4
+ALT_count_d1,ALT,observation_process,measurement process,count,False,observation_process,,R4
+ALT_count_d2,ALT,observation_process,measurement process,count,False,observation_process,,R4
+ALT_count_change,ALT,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+ALT_first_measurement_hour,ALT,observation_process,measurement process,hours,False,observation_process,,R4
+ALT_last_measurement_hour,ALT,observation_process,measurement process,hours,False,observation_process,,R4
+ALT_hours_since_last_measurement,ALT,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+ALT_median_intermeasurement_interval,ALT,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+ALT_mean_d1,ALT,severity,d1,IU/L,False,physiology,,R4
+ALT_mean_d2,ALT,severity,d2,IU/L,False,physiology,,R4
+ALT_d2_minus_d1,ALT,trajectory,d1,IU/L,True,physiology,,R2
+NIDiasABP_observed,NIDiasABP,observation_process,measurement process,indicator,True,observation_process,availability,R3
+NIDiasABP_count,NIDiasABP,observation_process,measurement process,count,True,observation_process,intensity,R3
+NIDiasABP_valid_count,NIDiasABP,observation_process,measurement process,count,False,observation_process,,R4
+NIDiasABP_count_d1,NIDiasABP,observation_process,measurement process,count,False,observation_process,,R4
+NIDiasABP_count_d2,NIDiasABP,observation_process,measurement process,count,False,observation_process,,R4
+NIDiasABP_count_change,NIDiasABP,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+NIDiasABP_first_measurement_hour,NIDiasABP,observation_process,measurement process,hours,False,observation_process,,R4
+NIDiasABP_last_measurement_hour,NIDiasABP,observation_process,measurement process,hours,False,observation_process,,R4
+NIDiasABP_hours_since_last_measurement,NIDiasABP,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+NIDiasABP_median_intermeasurement_interval,NIDiasABP,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+NIDiasABP_mean,NIDiasABP,severity,mean,mmHg,True,physiology,,R2
+NIDiasABP_median,NIDiasABP,severity,median,mmHg,False,physiology,,R4
+NIDiasABP_min,NIDiasABP,severity,min,mmHg,True,physiology,,R2
+NIDiasABP_max,NIDiasABP,severity,max,mmHg,True,physiology,,R2
+NIDiasABP_first,NIDiasABP,severity,first,mmHg,False,physiology,,R4
+NIDiasABP_last,NIDiasABP,severity,last,mmHg,False,physiology,,R1
+NIDiasABP_trend,NIDiasABP,trajectory,trend,mmHg,False,physiology,,R4
+NIDiasABP_sd,NIDiasABP,variability,sd,mmHg,True,physiology,,R2
+NIDiasABP_range,NIDiasABP,variability,range,mmHg,False,physiology,,R4
+NIDiasABP_iqr,NIDiasABP,variability,iqr,mmHg,True,physiology,,R2
+NIDiasABP_mad,NIDiasABP,variability,mad,mmHg,True,physiology,,R2
+NIDiasABP_slope,NIDiasABP,trajectory,slope,mmHg/hour,True,physiology,,R2
+NIDiasABP_mean_d1,NIDiasABP,severity,d1,mmHg,False,physiology,,R4
+NIDiasABP_mean_d2,NIDiasABP,severity,d2,mmHg,False,physiology,,R4
+NIDiasABP_d2_minus_d1,NIDiasABP,trajectory,d1,mmHg,True,physiology,,R2
+K_observed,K,observation_process,measurement process,indicator,True,observation_process,availability,R3
+K_count,K,observation_process,measurement process,count,True,observation_process,intensity,R3
+K_valid_count,K,observation_process,measurement process,count,False,observation_process,,R4
+K_count_d1,K,observation_process,measurement process,count,False,observation_process,,R4
+K_count_d2,K,observation_process,measurement process,count,False,observation_process,,R4
+K_count_change,K,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+K_first_measurement_hour,K,observation_process,measurement process,hours,False,observation_process,,R4
+K_last_measurement_hour,K,observation_process,measurement process,hours,False,observation_process,,R4
+K_hours_since_last_measurement,K,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+K_median_intermeasurement_interval,K,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+K_mean,K,severity,mean,mEq/L,True,physiology,,R2
+K_median,K,severity,median,mEq/L,False,physiology,,R4
+K_min,K,severity,min,mEq/L,True,physiology,,R2
+K_max,K,severity,max,mEq/L,True,physiology,,R2
+K_first,K,severity,first,mEq/L,False,physiology,,R4
+K_last,K,severity,last,mEq/L,False,physiology,,R1
+K_trend,K,trajectory,trend,mEq/L,False,physiology,,R4
+K_sd,K,variability,sd,mEq/L,True,physiology,,R2
+K_range,K,variability,range,mEq/L,False,physiology,,R4
+K_iqr,K,variability,iqr,mEq/L,True,physiology,,R2
+K_mad,K,variability,mad,mEq/L,True,physiology,,R2
+K_slope,K,trajectory,slope,mEq/L/hour,True,physiology,,R2
+K_mean_d1,K,severity,d1,mEq/L,False,physiology,,R4
+K_mean_d2,K,severity,d2,mEq/L,False,physiology,,R4
+K_d2_minus_d1,K,trajectory,d1,mEq/L,True,physiology,,R2
+NISysABP_observed,NISysABP,observation_process,measurement process,indicator,True,observation_process,availability,R3
+NISysABP_count,NISysABP,observation_process,measurement process,count,True,observation_process,intensity,R3
+NISysABP_valid_count,NISysABP,observation_process,measurement process,count,False,observation_process,,R4
+NISysABP_count_d1,NISysABP,observation_process,measurement process,count,False,observation_process,,R4
+NISysABP_count_d2,NISysABP,observation_process,measurement process,count,False,observation_process,,R4
+NISysABP_count_change,NISysABP,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+NISysABP_first_measurement_hour,NISysABP,observation_process,measurement process,hours,False,observation_process,,R4
+NISysABP_last_measurement_hour,NISysABP,observation_process,measurement process,hours,False,observation_process,,R4
+NISysABP_hours_since_last_measurement,NISysABP,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+NISysABP_median_intermeasurement_interval,NISysABP,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+NISysABP_mean,NISysABP,severity,mean,mmHg,True,physiology,,R2
+NISysABP_median,NISysABP,severity,median,mmHg,False,physiology,,R4
+NISysABP_min,NISysABP,severity,min,mmHg,True,physiology,,R2
+NISysABP_max,NISysABP,severity,max,mmHg,True,physiology,,R2
+NISysABP_first,NISysABP,severity,first,mmHg,False,physiology,,R4
+NISysABP_last,NISysABP,severity,last,mmHg,False,physiology,,R1
+NISysABP_trend,NISysABP,trajectory,trend,mmHg,False,physiology,,R4
+NISysABP_sd,NISysABP,variability,sd,mmHg,True,physiology,,R2
+NISysABP_range,NISysABP,variability,range,mmHg,False,physiology,,R4
+NISysABP_iqr,NISysABP,variability,iqr,mmHg,True,physiology,,R2
+NISysABP_mad,NISysABP,variability,mad,mmHg,True,physiology,,R2
+NISysABP_slope,NISysABP,trajectory,slope,mmHg/hour,True,physiology,,R2
+NISysABP_mean_d1,NISysABP,severity,d1,mmHg,False,physiology,,R4
+NISysABP_mean_d2,NISysABP,severity,d2,mmHg,False,physiology,,R4
+NISysABP_d2_minus_d1,NISysABP,trajectory,d1,mmHg,True,physiology,,R2
+pH_observed,pH,observation_process,measurement process,indicator,True,observation_process,availability,R3
+pH_count,pH,observation_process,measurement process,count,True,observation_process,intensity,R3
+pH_valid_count,pH,observation_process,measurement process,count,False,observation_process,,R4
+pH_count_d1,pH,observation_process,measurement process,count,False,observation_process,,R4
+pH_count_d2,pH,observation_process,measurement process,count,False,observation_process,,R4
+pH_count_change,pH,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+pH_first_measurement_hour,pH,observation_process,measurement process,hours,False,observation_process,,R4
+pH_last_measurement_hour,pH,observation_process,measurement process,hours,False,observation_process,,R4
+pH_hours_since_last_measurement,pH,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+pH_median_intermeasurement_interval,pH,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+pH_mean_d1,pH,severity,d1,pH units,False,physiology,,R4
+pH_mean_d2,pH,severity,d2,pH units,False,physiology,,R4
+pH_d2_minus_d1,pH,trajectory,d1,pH units,True,physiology,,R2
+PaCO2_observed,PaCO2,observation_process,measurement process,indicator,True,observation_process,availability,R3
+PaCO2_count,PaCO2,observation_process,measurement process,count,True,observation_process,intensity,R3
+PaCO2_valid_count,PaCO2,observation_process,measurement process,count,False,observation_process,,R4
+PaCO2_count_d1,PaCO2,observation_process,measurement process,count,False,observation_process,,R4
+PaCO2_count_d2,PaCO2,observation_process,measurement process,count,False,observation_process,,R4
+PaCO2_count_change,PaCO2,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+PaCO2_first_measurement_hour,PaCO2,observation_process,measurement process,hours,False,observation_process,,R4
+PaCO2_last_measurement_hour,PaCO2,observation_process,measurement process,hours,False,observation_process,,R4
+PaCO2_hours_since_last_measurement,PaCO2,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+PaCO2_median_intermeasurement_interval,PaCO2,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+PaCO2_mean_d1,PaCO2,severity,d1,mmHg,False,physiology,,R4
+PaCO2_mean_d2,PaCO2,severity,d2,mmHg,False,physiology,,R4
+PaCO2_d2_minus_d1,PaCO2,trajectory,d1,mmHg,True,physiology,,R2
+WBC_observed,WBC,observation_process,measurement process,indicator,True,observation_process,availability,R3
+WBC_count,WBC,observation_process,measurement process,count,True,observation_process,intensity,R3
+WBC_valid_count,WBC,observation_process,measurement process,count,False,observation_process,,R4
+WBC_count_d1,WBC,observation_process,measurement process,count,False,observation_process,,R4
+WBC_count_d2,WBC,observation_process,measurement process,count,False,observation_process,,R4
+WBC_count_change,WBC,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+WBC_first_measurement_hour,WBC,observation_process,measurement process,hours,False,observation_process,,R4
+WBC_last_measurement_hour,WBC,observation_process,measurement process,hours,False,observation_process,,R4
+WBC_hours_since_last_measurement,WBC,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+WBC_median_intermeasurement_interval,WBC,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+WBC_mean,WBC,severity,mean,10^3/uL,True,physiology,,R2
+WBC_median,WBC,severity,median,10^3/uL,False,physiology,,R4
+WBC_min,WBC,severity,min,10^3/uL,True,physiology,,R2
+WBC_max,WBC,severity,max,10^3/uL,True,physiology,,R2
+WBC_first,WBC,severity,first,10^3/uL,False,physiology,,R4
+WBC_last,WBC,severity,last,10^3/uL,False,physiology,,R1
+WBC_trend,WBC,trajectory,trend,10^3/uL,False,physiology,,R4
+WBC_sd,WBC,variability,sd,10^3/uL,True,physiology,,R2
+WBC_range,WBC,variability,range,10^3/uL,False,physiology,,R4
+WBC_iqr,WBC,variability,iqr,10^3/uL,True,physiology,,R2
+WBC_mad,WBC,variability,mad,10^3/uL,True,physiology,,R2
+WBC_slope,WBC,trajectory,slope,10^3/uL/hour,True,physiology,,R2
+WBC_mean_d1,WBC,severity,d1,10^3/uL,False,physiology,,R4
+WBC_mean_d2,WBC,severity,d2,10^3/uL,False,physiology,,R4
+WBC_d2_minus_d1,WBC,trajectory,d1,10^3/uL,True,physiology,,R2
+Cholesterol_observed,Cholesterol,observation_process,measurement process,indicator,True,observation_process,availability,R3
+Cholesterol_count,Cholesterol,observation_process,measurement process,count,True,observation_process,intensity,R3
+Cholesterol_valid_count,Cholesterol,observation_process,measurement process,count,False,observation_process,,R4
+Cholesterol_count_d1,Cholesterol,observation_process,measurement process,count,False,observation_process,,R4
+Cholesterol_count_d2,Cholesterol,observation_process,measurement process,count,False,observation_process,,R4
+Cholesterol_count_change,Cholesterol,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+Cholesterol_first_measurement_hour,Cholesterol,observation_process,measurement process,hours,False,observation_process,,R4
+Cholesterol_last_measurement_hour,Cholesterol,observation_process,measurement process,hours,False,observation_process,,R4
+Cholesterol_hours_since_last_measurement,Cholesterol,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+Cholesterol_median_intermeasurement_interval,Cholesterol,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+Cholesterol_mean_d1,Cholesterol,severity,d1,mg/dL,False,physiology,,R4
+Cholesterol_mean_d2,Cholesterol,severity,d2,mg/dL,False,physiology,,R4
+Cholesterol_d2_minus_d1,Cholesterol,trajectory,d1,mg/dL,True,physiology,,R2
+Albumin_observed,Albumin,observation_process,measurement process,indicator,True,observation_process,availability,R3
+Albumin_count,Albumin,observation_process,measurement process,count,True,observation_process,intensity,R3
+Albumin_valid_count,Albumin,observation_process,measurement process,count,False,observation_process,,R4
+Albumin_count_d1,Albumin,observation_process,measurement process,count,False,observation_process,,R4
+Albumin_count_d2,Albumin,observation_process,measurement process,count,False,observation_process,,R4
+Albumin_count_change,Albumin,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+Albumin_first_measurement_hour,Albumin,observation_process,measurement process,hours,False,observation_process,,R4
+Albumin_last_measurement_hour,Albumin,observation_process,measurement process,hours,False,observation_process,,R4
+Albumin_hours_since_last_measurement,Albumin,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+Albumin_median_intermeasurement_interval,Albumin,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+Albumin_mean_d1,Albumin,severity,d1,g/dL,False,physiology,,R4
+Albumin_mean_d2,Albumin,severity,d2,g/dL,False,physiology,,R4
+Albumin_d2_minus_d1,Albumin,trajectory,d1,g/dL,True,physiology,,R2
+RespRate_observed,RespRate,observation_process,measurement process,indicator,True,observation_process,availability,R3
+RespRate_count,RespRate,observation_process,measurement process,count,True,observation_process,intensity,R3
+RespRate_valid_count,RespRate,observation_process,measurement process,count,False,observation_process,,R4
+RespRate_count_d1,RespRate,observation_process,measurement process,count,False,observation_process,,R4
+RespRate_count_d2,RespRate,observation_process,measurement process,count,False,observation_process,,R4
+RespRate_count_change,RespRate,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+RespRate_first_measurement_hour,RespRate,observation_process,measurement process,hours,False,observation_process,,R4
+RespRate_last_measurement_hour,RespRate,observation_process,measurement process,hours,False,observation_process,,R4
+RespRate_hours_since_last_measurement,RespRate,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+RespRate_median_intermeasurement_interval,RespRate,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+RespRate_mean,RespRate,severity,mean,breaths/min,True,physiology,,R2
+RespRate_median,RespRate,severity,median,breaths/min,False,physiology,,R4
+RespRate_min,RespRate,severity,min,breaths/min,True,physiology,,R2
+RespRate_max,RespRate,severity,max,breaths/min,True,physiology,,R2
+RespRate_first,RespRate,severity,first,breaths/min,False,physiology,,R4
+RespRate_last,RespRate,severity,last,breaths/min,False,physiology,,R0
+RespRate_trend,RespRate,trajectory,trend,breaths/min,False,physiology,,R4
+RespRate_sd,RespRate,variability,sd,breaths/min,True,physiology,,R2
+RespRate_range,RespRate,variability,range,breaths/min,False,physiology,,R4
+RespRate_iqr,RespRate,variability,iqr,breaths/min,True,physiology,,R2
+RespRate_mad,RespRate,variability,mad,breaths/min,True,physiology,,R2
+RespRate_slope,RespRate,trajectory,slope,breaths/min/hour,True,physiology,,R2
+RespRate_mean_d1,RespRate,severity,d1,breaths/min,False,physiology,,R4
+RespRate_mean_d2,RespRate,severity,d2,breaths/min,False,physiology,,R4
+RespRate_d2_minus_d1,RespRate,trajectory,d1,breaths/min,True,physiology,,R2
+ALP_observed,ALP,observation_process,measurement process,indicator,True,observation_process,availability,R3
+ALP_count,ALP,observation_process,measurement process,count,True,observation_process,intensity,R3
+ALP_valid_count,ALP,observation_process,measurement process,count,False,observation_process,,R4
+ALP_count_d1,ALP,observation_process,measurement process,count,False,observation_process,,R4
+ALP_count_d2,ALP,observation_process,measurement process,count,False,observation_process,,R4
+ALP_count_change,ALP,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+ALP_first_measurement_hour,ALP,observation_process,measurement process,hours,False,observation_process,,R4
+ALP_last_measurement_hour,ALP,observation_process,measurement process,hours,False,observation_process,,R4
+ALP_hours_since_last_measurement,ALP,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+ALP_median_intermeasurement_interval,ALP,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+ALP_mean_d1,ALP,severity,d1,IU/L,False,physiology,,R4
+ALP_mean_d2,ALP,severity,d2,IU/L,False,physiology,,R4
+ALP_d2_minus_d1,ALP,trajectory,d1,IU/L,True,physiology,,R2
+TroponinT_observed,TroponinT,observation_process,measurement process,indicator,True,observation_process,availability,R3
+TroponinT_count,TroponinT,observation_process,measurement process,count,True,observation_process,intensity,R3
+TroponinT_valid_count,TroponinT,observation_process,measurement process,count,False,observation_process,,R4
+TroponinT_count_d1,TroponinT,observation_process,measurement process,count,False,observation_process,,R4
+TroponinT_count_d2,TroponinT,observation_process,measurement process,count,False,observation_process,,R4
+TroponinT_count_change,TroponinT,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+TroponinT_first_measurement_hour,TroponinT,observation_process,measurement process,hours,False,observation_process,,R4
+TroponinT_last_measurement_hour,TroponinT,observation_process,measurement process,hours,False,observation_process,,R4
+TroponinT_hours_since_last_measurement,TroponinT,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+TroponinT_median_intermeasurement_interval,TroponinT,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+TroponinT_mean_d1,TroponinT,severity,d1,ng/mL,False,physiology,,R4
+TroponinT_mean_d2,TroponinT,severity,d2,ng/mL,False,physiology,,R4
+TroponinT_d2_minus_d1,TroponinT,trajectory,d1,ng/mL,True,physiology,,R2
+AST_observed,AST,observation_process,measurement process,indicator,True,observation_process,availability,R3
+AST_count,AST,observation_process,measurement process,count,True,observation_process,intensity,R3
+AST_valid_count,AST,observation_process,measurement process,count,False,observation_process,,R4
+AST_count_d1,AST,observation_process,measurement process,count,False,observation_process,,R4
+AST_count_d2,AST,observation_process,measurement process,count,False,observation_process,,R4
+AST_count_change,AST,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+AST_first_measurement_hour,AST,observation_process,measurement process,hours,False,observation_process,,R4
+AST_last_measurement_hour,AST,observation_process,measurement process,hours,False,observation_process,,R4
+AST_hours_since_last_measurement,AST,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+AST_median_intermeasurement_interval,AST,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+AST_mean_d1,AST,severity,d1,IU/L,False,physiology,,R4
+AST_mean_d2,AST,severity,d2,IU/L,False,physiology,,R4
+AST_d2_minus_d1,AST,trajectory,d1,IU/L,True,physiology,,R2
+BUN_observed,BUN,observation_process,measurement process,indicator,True,observation_process,availability,R3
+BUN_count,BUN,observation_process,measurement process,count,True,observation_process,intensity,R3
+BUN_valid_count,BUN,observation_process,measurement process,count,False,observation_process,,R4
+BUN_count_d1,BUN,observation_process,measurement process,count,False,observation_process,,R4
+BUN_count_d2,BUN,observation_process,measurement process,count,False,observation_process,,R4
+BUN_count_change,BUN,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+BUN_first_measurement_hour,BUN,observation_process,measurement process,hours,False,observation_process,,R4
+BUN_last_measurement_hour,BUN,observation_process,measurement process,hours,False,observation_process,,R4
+BUN_hours_since_last_measurement,BUN,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+BUN_median_intermeasurement_interval,BUN,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+BUN_mean,BUN,severity,mean,mg/dL,True,physiology,,R2
+BUN_median,BUN,severity,median,mg/dL,False,physiology,,R4
+BUN_min,BUN,severity,min,mg/dL,True,physiology,,R2
+BUN_max,BUN,severity,max,mg/dL,True,physiology,,R2
+BUN_first,BUN,severity,first,mg/dL,False,physiology,,R4
+BUN_last,BUN,severity,last,mg/dL,False,physiology,,R1
+BUN_trend,BUN,trajectory,trend,mg/dL,False,physiology,,R4
+BUN_sd,BUN,variability,sd,mg/dL,True,physiology,,R2
+BUN_range,BUN,variability,range,mg/dL,False,physiology,,R4
+BUN_iqr,BUN,variability,iqr,mg/dL,True,physiology,,R2
+BUN_mad,BUN,variability,mad,mg/dL,True,physiology,,R2
+BUN_slope,BUN,trajectory,slope,mg/dL/hour,True,physiology,,R2
+BUN_mean_d1,BUN,severity,d1,mg/dL,False,physiology,,R4
+BUN_mean_d2,BUN,severity,d2,mg/dL,False,physiology,,R4
+BUN_d2_minus_d1,BUN,trajectory,d1,mg/dL,True,physiology,,R2
+HCO3_observed,HCO3,observation_process,measurement process,indicator,True,observation_process,availability,R3
+HCO3_count,HCO3,observation_process,measurement process,count,True,observation_process,intensity,R3
+HCO3_valid_count,HCO3,observation_process,measurement process,count,False,observation_process,,R4
+HCO3_count_d1,HCO3,observation_process,measurement process,count,False,observation_process,,R4
+HCO3_count_d2,HCO3,observation_process,measurement process,count,False,observation_process,,R4
+HCO3_count_change,HCO3,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+HCO3_first_measurement_hour,HCO3,observation_process,measurement process,hours,False,observation_process,,R4
+HCO3_last_measurement_hour,HCO3,observation_process,measurement process,hours,False,observation_process,,R4
+HCO3_hours_since_last_measurement,HCO3,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+HCO3_median_intermeasurement_interval,HCO3,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+HCO3_mean,HCO3,severity,mean,mEq/L,True,physiology,,R2
+HCO3_median,HCO3,severity,median,mEq/L,False,physiology,,R4
+HCO3_min,HCO3,severity,min,mEq/L,True,physiology,,R2
+HCO3_max,HCO3,severity,max,mEq/L,True,physiology,,R2
+HCO3_first,HCO3,severity,first,mEq/L,False,physiology,,R4
+HCO3_last,HCO3,severity,last,mEq/L,False,physiology,,R1
+HCO3_trend,HCO3,trajectory,trend,mEq/L,False,physiology,,R4
+HCO3_sd,HCO3,variability,sd,mEq/L,True,physiology,,R2
+HCO3_range,HCO3,variability,range,mEq/L,False,physiology,,R4
+HCO3_iqr,HCO3,variability,iqr,mEq/L,True,physiology,,R2
+HCO3_mad,HCO3,variability,mad,mEq/L,True,physiology,,R2
+HCO3_slope,HCO3,trajectory,slope,mEq/L/hour,True,physiology,,R2
+HCO3_mean_d1,HCO3,severity,d1,mEq/L,False,physiology,,R4
+HCO3_mean_d2,HCO3,severity,d2,mEq/L,False,physiology,,R4
+HCO3_d2_minus_d1,HCO3,trajectory,d1,mEq/L,True,physiology,,R2
+Weight_observed,Weight,observation_process,measurement process,indicator,True,observation_process,availability,R3
+Weight_count,Weight,observation_process,measurement process,count,True,observation_process,intensity,R3
+Weight_valid_count,Weight,observation_process,measurement process,count,False,observation_process,,R4
+Weight_count_d1,Weight,observation_process,measurement process,count,False,observation_process,,R4
+Weight_count_d2,Weight,observation_process,measurement process,count,False,observation_process,,R4
+Weight_count_change,Weight,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+Weight_first_measurement_hour,Weight,observation_process,measurement process,hours,False,observation_process,,R4
+Weight_last_measurement_hour,Weight,observation_process,measurement process,hours,False,observation_process,,R4
+Weight_hours_since_last_measurement,Weight,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+Weight_median_intermeasurement_interval,Weight,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+Weight_mean_d1,Weight,severity,d1,kg,False,physiology,,R4
+Weight_mean_d2,Weight,severity,d2,kg,False,physiology,,R4
+Weight_d2_minus_d1,Weight,trajectory,d1,kg,True,physiology,,R2
+GCS_observed,GCS,observation_process,measurement process,indicator,True,observation_process,availability,R3
+GCS_count,GCS,observation_process,measurement process,count,True,observation_process,intensity,R3
+GCS_valid_count,GCS,observation_process,measurement process,count,False,observation_process,,R4
+GCS_count_d1,GCS,observation_process,measurement process,count,False,observation_process,,R4
+GCS_count_d2,GCS,observation_process,measurement process,count,False,observation_process,,R4
+GCS_count_change,GCS,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+GCS_first_measurement_hour,GCS,observation_process,measurement process,hours,False,observation_process,,R4
+GCS_last_measurement_hour,GCS,observation_process,measurement process,hours,False,observation_process,,R4
+GCS_hours_since_last_measurement,GCS,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+GCS_median_intermeasurement_interval,GCS,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+GCS_mean,GCS,severity,mean,score,True,physiology,,R2
+GCS_median,GCS,severity,median,score,False,physiology,,R4
+GCS_min,GCS,severity,min,score,True,physiology,,R2
+GCS_max,GCS,severity,max,score,True,physiology,,R2
+GCS_first,GCS,severity,first,score,False,physiology,,R4
+GCS_last,GCS,severity,last,score,False,physiology,,R1
+GCS_trend,GCS,trajectory,trend,score,False,physiology,,R4
+GCS_sd,GCS,variability,sd,score,True,physiology,,R2
+GCS_range,GCS,variability,range,score,False,physiology,,R4
+GCS_iqr,GCS,variability,iqr,score,True,physiology,,R2
+GCS_mad,GCS,variability,mad,score,True,physiology,,R2
+GCS_slope,GCS,trajectory,slope,score/hour,True,physiology,,R2
+GCS_mean_d1,GCS,severity,d1,score,False,physiology,,R4
+GCS_mean_d2,GCS,severity,d2,score,False,physiology,,R4
+GCS_d2_minus_d1,GCS,trajectory,d1,score,True,physiology,,R2
+Bilirubin_observed,Bilirubin,observation_process,measurement process,indicator,True,observation_process,availability,R3
+Bilirubin_count,Bilirubin,observation_process,measurement process,count,True,observation_process,intensity,R3
+Bilirubin_valid_count,Bilirubin,observation_process,measurement process,count,False,observation_process,,R4
+Bilirubin_count_d1,Bilirubin,observation_process,measurement process,count,False,observation_process,,R4
+Bilirubin_count_d2,Bilirubin,observation_process,measurement process,count,False,observation_process,,R4
+Bilirubin_count_change,Bilirubin,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+Bilirubin_first_measurement_hour,Bilirubin,observation_process,measurement process,hours,False,observation_process,,R4
+Bilirubin_last_measurement_hour,Bilirubin,observation_process,measurement process,hours,False,observation_process,,R4
+Bilirubin_hours_since_last_measurement,Bilirubin,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+Bilirubin_median_intermeasurement_interval,Bilirubin,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+Bilirubin_mean_d1,Bilirubin,severity,d1,mg/dL,False,physiology,,R4
+Bilirubin_mean_d2,Bilirubin,severity,d2,mg/dL,False,physiology,,R4
+Bilirubin_d2_minus_d1,Bilirubin,trajectory,d1,mg/dL,True,physiology,,R2
+SysABP_observed,SysABP,observation_process,measurement process,indicator,True,observation_process,availability,R3
+SysABP_count,SysABP,observation_process,measurement process,count,True,observation_process,intensity,R3
+SysABP_valid_count,SysABP,observation_process,measurement process,count,False,observation_process,,R4
+SysABP_count_d1,SysABP,observation_process,measurement process,count,False,observation_process,,R4
+SysABP_count_d2,SysABP,observation_process,measurement process,count,False,observation_process,,R4
+SysABP_count_change,SysABP,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+SysABP_first_measurement_hour,SysABP,observation_process,measurement process,hours,False,observation_process,,R4
+SysABP_last_measurement_hour,SysABP,observation_process,measurement process,hours,False,observation_process,,R4
+SysABP_hours_since_last_measurement,SysABP,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+SysABP_median_intermeasurement_interval,SysABP,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+SysABP_mean_d1,SysABP,severity,d1,mmHg,False,physiology,,R4
+SysABP_mean_d2,SysABP,severity,d2,mmHg,False,physiology,,R4
+SysABP_d2_minus_d1,SysABP,trajectory,d1,mmHg,True,physiology,,R2
+PaO2_observed,PaO2,observation_process,measurement process,indicator,True,observation_process,availability,R3
+PaO2_count,PaO2,observation_process,measurement process,count,True,observation_process,intensity,R3
+PaO2_valid_count,PaO2,observation_process,measurement process,count,False,observation_process,,R4
+PaO2_count_d1,PaO2,observation_process,measurement process,count,False,observation_process,,R4
+PaO2_count_d2,PaO2,observation_process,measurement process,count,False,observation_process,,R4
+PaO2_count_change,PaO2,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+PaO2_first_measurement_hour,PaO2,observation_process,measurement process,hours,False,observation_process,,R4
+PaO2_last_measurement_hour,PaO2,observation_process,measurement process,hours,False,observation_process,,R4
+PaO2_hours_since_last_measurement,PaO2,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+PaO2_median_intermeasurement_interval,PaO2,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+PaO2_mean_d1,PaO2,severity,d1,mmHg,False,physiology,,R4
+PaO2_mean_d2,PaO2,severity,d2,mmHg,False,physiology,,R4
+PaO2_d2_minus_d1,PaO2,trajectory,d1,mmHg,True,physiology,,R2
+HCT_observed,HCT,observation_process,measurement process,indicator,True,observation_process,availability,R3
+HCT_count,HCT,observation_process,measurement process,count,True,observation_process,intensity,R3
+HCT_valid_count,HCT,observation_process,measurement process,count,False,observation_process,,R4
+HCT_count_d1,HCT,observation_process,measurement process,count,False,observation_process,,R4
+HCT_count_d2,HCT,observation_process,measurement process,count,False,observation_process,,R4
+HCT_count_change,HCT,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+HCT_first_measurement_hour,HCT,observation_process,measurement process,hours,False,observation_process,,R4
+HCT_last_measurement_hour,HCT,observation_process,measurement process,hours,False,observation_process,,R4
+HCT_hours_since_last_measurement,HCT,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+HCT_median_intermeasurement_interval,HCT,observation_process,measurement process,hours,True,observation_process,recency_cadence,R3
+HCT_mean,HCT,severity,mean,%,True,physiology,,R2
+HCT_median,HCT,severity,median,%,False,physiology,,R4
+HCT_min,HCT,severity,min,%,True,physiology,,R2
+HCT_max,HCT,severity,max,%,True,physiology,,R2
+HCT_first,HCT,severity,first,%,False,physiology,,R4
+HCT_last,HCT,severity,last,%,False,physiology,,R1
+HCT_trend,HCT,trajectory,trend,%,False,physiology,,R4
+HCT_sd,HCT,variability,sd,%,True,physiology,,R2
+HCT_range,HCT,variability,range,%,False,physiology,,R4
+HCT_iqr,HCT,variability,iqr,%,True,physiology,,R2
+HCT_mad,HCT,variability,mad,%,True,physiology,,R2
+HCT_slope,HCT,trajectory,slope,%/hour,True,physiology,,R2
+HCT_mean_d1,HCT,severity,d1,%,False,physiology,,R4
+HCT_mean_d2,HCT,severity,d2,%,False,physiology,,R4
+HCT_d2_minus_d1,HCT,trajectory,d1,%,True,physiology,,R2
+total_measurements_d1,total,observation_process,measurement process,count,False,observation_process,,R4
+total_measurements_d2,total,observation_process,measurement process,count,False,observation_process,,R4
+total_measurements,total,observation_process,measurement process,count,True,observation_process,intensity,R3
+total_measurement_change,total,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+distinct_variables_measured_d1,distinct,observation_process,measurement process,count,False,observation_process,,R4
+distinct_variables_measured_d2,distinct,observation_process,measurement process,count,False,observation_process,,R4
+distinct_variables_measured,distinct,observation_process,measurement process,count,True,observation_process,intensity,R3
+distinct_variables_change,distinct,observation_process,measurement process,count,True,observation_process,change_in_intensity,R3
+BUN_Cr_ratio,BUN,severity,ratio,dimensionless,False,physiology,,R4
+PF_min,paired clinical measurement,severity,min,mmHg,True,physiology,,R2
+PF_mean,paired clinical measurement,severity,mean,mmHg,True,physiology,,R2
+PF_last,paired clinical measurement,severity,last,mmHg,False,physiology,,R1
+ShockIndex_mean,paired clinical measurement,severity,mean,bpm/mmHg,True,physiology,,R2
+ShockIndex_max,paired clinical measurement,severity,max,bpm/mmHg,True,physiology,,R2
+ShockIndex_last,paired clinical measurement,severity,last,bpm/mmHg,False,physiology,,R1
+SaO2_mean,SaO2,severity,mean,%,True,physiology,,R2
+SaO2_median,SaO2,severity,median,%,False,physiology,,R4
+SaO2_min,SaO2,severity,min,%,True,physiology,,R2
+SaO2_max,SaO2,severity,max,%,True,physiology,,R2
+SaO2_first,SaO2,severity,first,%,False,physiology,,R4
+SaO2_last,SaO2,severity,last,%,False,physiology,,R0
+SaO2_trend,SaO2,trajectory,trend,%,False,physiology,,R4
+SaO2_sd,SaO2,variability,sd,%,True,physiology,,R2
+SaO2_range,SaO2,variability,range,%,False,physiology,,R4
+SaO2_iqr,SaO2,variability,iqr,%,True,physiology,,R2
+SaO2_mad,SaO2,variability,mad,%,True,physiology,,R2
+SaO2_slope,SaO2,trajectory,slope,%/hour,True,physiology,,R2
+DiasABP_mean,DiasABP,severity,mean,mmHg,True,physiology,,R2
+DiasABP_median,DiasABP,severity,median,mmHg,False,physiology,,R4
+DiasABP_min,DiasABP,severity,min,mmHg,True,physiology,,R2
+DiasABP_max,DiasABP,severity,max,mmHg,True,physiology,,R2
+DiasABP_first,DiasABP,severity,first,mmHg,False,physiology,,R4
+DiasABP_last,DiasABP,severity,last,mmHg,False,physiology,,R1
+DiasABP_trend,DiasABP,trajectory,trend,mmHg,False,physiology,,R4
+DiasABP_sd,DiasABP,variability,sd,mmHg,True,physiology,,R2
+DiasABP_range,DiasABP,variability,range,mmHg,False,physiology,,R4
+DiasABP_iqr,DiasABP,variability,iqr,mmHg,True,physiology,,R2
+DiasABP_mad,DiasABP,variability,mad,mmHg,True,physiology,,R2
+DiasABP_slope,DiasABP,trajectory,slope,mmHg/hour,True,physiology,,R2
+FiO2_mean,FiO2,severity,mean,fraction,True,physiology,,R2
+FiO2_median,FiO2,severity,median,fraction,False,physiology,,R4
+FiO2_min,FiO2,severity,min,fraction,True,physiology,,R2
+FiO2_max,FiO2,severity,max,fraction,True,physiology,,R2
+FiO2_first,FiO2,severity,first,fraction,False,physiology,,R4
+FiO2_last,FiO2,severity,last,fraction,False,physiology,,R1
+FiO2_trend,FiO2,trajectory,trend,fraction,False,physiology,,R4
+FiO2_sd,FiO2,variability,sd,fraction,True,physiology,,R2
+FiO2_range,FiO2,variability,range,fraction,False,physiology,,R4
+FiO2_iqr,FiO2,variability,iqr,fraction,True,physiology,,R2
+FiO2_mad,FiO2,variability,mad,fraction,True,physiology,,R2
+FiO2_slope,FiO2,trajectory,slope,fraction/hour,True,physiology,,R2
+MAP_mean,MAP,severity,mean,mmHg,True,physiology,,R2
+MAP_median,MAP,severity,median,mmHg,False,physiology,,R4
+MAP_min,MAP,severity,min,mmHg,True,physiology,,R2
+MAP_max,MAP,severity,max,mmHg,True,physiology,,R2
+MAP_first,MAP,severity,first,mmHg,False,physiology,,R4
+MAP_last,MAP,severity,last,mmHg,False,physiology,,R0
+MAP_trend,MAP,trajectory,trend,mmHg,False,physiology,,R4
+MAP_sd,MAP,variability,sd,mmHg,True,physiology,,R2
+MAP_range,MAP,variability,range,mmHg,False,physiology,,R4
+MAP_iqr,MAP,variability,iqr,mmHg,True,physiology,,R2
+MAP_mad,MAP,variability,mad,mmHg,True,physiology,,R2
+MAP_slope,MAP,trajectory,slope,mmHg/hour,True,physiology,,R2
+pH_mean,pH,severity,mean,pH units,True,physiology,,R2
+pH_median,pH,severity,median,pH units,False,physiology,,R4
+pH_min,pH,severity,min,pH units,True,physiology,,R2
+pH_max,pH,severity,max,pH units,True,physiology,,R2
+pH_first,pH,severity,first,pH units,False,physiology,,R4
+pH_last,pH,severity,last,pH units,False,physiology,,R1
+pH_trend,pH,trajectory,trend,pH units,False,physiology,,R4
+pH_sd,pH,variability,sd,pH units,True,physiology,,R2
+pH_range,pH,variability,range,pH units,False,physiology,,R4
+pH_iqr,pH,variability,iqr,pH units,True,physiology,,R2
+pH_mad,pH,variability,mad,pH units,True,physiology,,R2
+pH_slope,pH,trajectory,slope,pH units/hour,True,physiology,,R2
+PaCO2_mean,PaCO2,severity,mean,mmHg,True,physiology,,R2
+PaCO2_median,PaCO2,severity,median,mmHg,False,physiology,,R4
+PaCO2_min,PaCO2,severity,min,mmHg,True,physiology,,R2
+PaCO2_max,PaCO2,severity,max,mmHg,True,physiology,,R2
+PaCO2_first,PaCO2,severity,first,mmHg,False,physiology,,R4
+PaCO2_last,PaCO2,severity,last,mmHg,False,physiology,,R1
+PaCO2_trend,PaCO2,trajectory,trend,mmHg,False,physiology,,R4
+PaCO2_sd,PaCO2,variability,sd,mmHg,True,physiology,,R2
+PaCO2_range,PaCO2,variability,range,mmHg,False,physiology,,R4
+PaCO2_iqr,PaCO2,variability,iqr,mmHg,True,physiology,,R2
+PaCO2_mad,PaCO2,variability,mad,mmHg,True,physiology,,R2
+PaCO2_slope,PaCO2,trajectory,slope,mmHg/hour,True,physiology,,R2
+Weight_mean,Weight,severity,mean,kg,True,physiology,,R2
+Weight_median,Weight,severity,median,kg,False,physiology,,R4
+Weight_min,Weight,severity,min,kg,True,physiology,,R2
+Weight_max,Weight,severity,max,kg,True,physiology,,R2
+Weight_first,Weight,severity,first,kg,False,physiology,,R4
+Weight_last,Weight,severity,last,kg,False,physiology,,R1
+Weight_trend,Weight,trajectory,trend,kg,False,physiology,,R4
+Weight_sd,Weight,variability,sd,kg,True,physiology,,R2
+Weight_range,Weight,variability,range,kg,False,physiology,,R4
+Weight_iqr,Weight,variability,iqr,kg,True,physiology,,R2
+Weight_mad,Weight,variability,mad,kg,True,physiology,,R2
+Weight_slope,Weight,trajectory,slope,kg/hour,True,physiology,,R2
+SysABP_mean,SysABP,severity,mean,mmHg,True,physiology,,R2
+SysABP_median,SysABP,severity,median,mmHg,False,physiology,,R4
+SysABP_min,SysABP,severity,min,mmHg,True,physiology,,R2
+SysABP_max,SysABP,severity,max,mmHg,True,physiology,,R2
+SysABP_first,SysABP,severity,first,mmHg,False,physiology,,R4
+SysABP_last,SysABP,severity,last,mmHg,False,physiology,,R1
+SysABP_trend,SysABP,trajectory,trend,mmHg,False,physiology,,R4
+SysABP_sd,SysABP,variability,sd,mmHg,True,physiology,,R2
+SysABP_range,SysABP,variability,range,mmHg,False,physiology,,R4
+SysABP_iqr,SysABP,variability,iqr,mmHg,True,physiology,,R2
+SysABP_mad,SysABP,variability,mad,mmHg,True,physiology,,R2
+SysABP_slope,SysABP,trajectory,slope,mmHg/hour,True,physiology,,R2
+PaO2_mean,PaO2,severity,mean,mmHg,True,physiology,,R2
+PaO2_median,PaO2,severity,median,mmHg,False,physiology,,R4
+PaO2_min,PaO2,severity,min,mmHg,True,physiology,,R2
+PaO2_max,PaO2,severity,max,mmHg,True,physiology,,R2
+PaO2_first,PaO2,severity,first,mmHg,False,physiology,,R4
+PaO2_last,PaO2,severity,last,mmHg,False,physiology,,R1
+PaO2_trend,PaO2,trajectory,trend,mmHg,False,physiology,,R4
+PaO2_sd,PaO2,variability,sd,mmHg,True,physiology,,R2
+PaO2_range,PaO2,variability,range,mmHg,False,physiology,,R4
+PaO2_iqr,PaO2,variability,iqr,mmHg,True,physiology,,R2
+PaO2_mad,PaO2,variability,mad,mmHg,True,physiology,,R2
+PaO2_slope,PaO2,trajectory,slope,mmHg/hour,True,physiology,,R2
+Lactate_mean,Lactate,severity,mean,mmol/L,True,physiology,,R2
+Lactate_median,Lactate,severity,median,mmol/L,False,physiology,,R4
+Lactate_min,Lactate,severity,min,mmol/L,True,physiology,,R2
+Lactate_max,Lactate,severity,max,mmol/L,True,physiology,,R2
+Lactate_first,Lactate,severity,first,mmol/L,False,physiology,,R4
+Lactate_last,Lactate,severity,last,mmol/L,False,physiology,,R1
+Lactate_trend,Lactate,trajectory,trend,mmol/L,False,physiology,,R4
+Lactate_sd,Lactate,variability,sd,mmol/L,True,physiology,,R2
+Lactate_range,Lactate,variability,range,mmol/L,False,physiology,,R4
+Lactate_iqr,Lactate,variability,iqr,mmol/L,True,physiology,,R2
+Lactate_mad,Lactate,variability,mad,mmol/L,True,physiology,,R2
+Lactate_slope,Lactate,trajectory,slope,mmol/L/hour,True,physiology,,R2
+ALT_mean,ALT,severity,mean,IU/L,True,physiology,,R2
+ALT_median,ALT,severity,median,IU/L,False,physiology,,R4
+ALT_min,ALT,severity,min,IU/L,True,physiology,,R2
+ALT_max,ALT,severity,max,IU/L,True,physiology,,R2
+ALT_first,ALT,severity,first,IU/L,False,physiology,,R4
+ALT_last,ALT,severity,last,IU/L,False,physiology,,R1
+ALT_trend,ALT,trajectory,trend,IU/L,False,physiology,,R4
+ALT_sd,ALT,variability,sd,IU/L,True,physiology,,R2
+ALT_range,ALT,variability,range,IU/L,False,physiology,,R4
+ALT_iqr,ALT,variability,iqr,IU/L,True,physiology,,R2
+ALT_mad,ALT,variability,mad,IU/L,True,physiology,,R2
+ALT_slope,ALT,trajectory,slope,IU/L/hour,True,physiology,,R2
+Albumin_mean,Albumin,severity,mean,g/dL,True,physiology,,R2
+Albumin_median,Albumin,severity,median,g/dL,False,physiology,,R4
+Albumin_min,Albumin,severity,min,g/dL,True,physiology,,R2
+Albumin_max,Albumin,severity,max,g/dL,True,physiology,,R2
+Albumin_first,Albumin,severity,first,g/dL,False,physiology,,R4
+Albumin_last,Albumin,severity,last,g/dL,False,physiology,,R1
+Albumin_trend,Albumin,trajectory,trend,g/dL,False,physiology,,R4
+Albumin_sd,Albumin,variability,sd,g/dL,True,physiology,,R2
+Albumin_range,Albumin,variability,range,g/dL,False,physiology,,R4
+Albumin_iqr,Albumin,variability,iqr,g/dL,True,physiology,,R2
+Albumin_mad,Albumin,variability,mad,g/dL,True,physiology,,R2
+Albumin_slope,Albumin,trajectory,slope,g/dL/hour,True,physiology,,R2
+ALP_mean,ALP,severity,mean,IU/L,True,physiology,,R2
+ALP_median,ALP,severity,median,IU/L,False,physiology,,R4
+ALP_min,ALP,severity,min,IU/L,True,physiology,,R2
+ALP_max,ALP,severity,max,IU/L,True,physiology,,R2
+ALP_first,ALP,severity,first,IU/L,False,physiology,,R4
+ALP_last,ALP,severity,last,IU/L,False,physiology,,R1
+ALP_trend,ALP,trajectory,trend,IU/L,False,physiology,,R4
+ALP_sd,ALP,variability,sd,IU/L,True,physiology,,R2
+ALP_range,ALP,variability,range,IU/L,False,physiology,,R4
+ALP_iqr,ALP,variability,iqr,IU/L,True,physiology,,R2
+ALP_mad,ALP,variability,mad,IU/L,True,physiology,,R2
+ALP_slope,ALP,trajectory,slope,IU/L/hour,True,physiology,,R2
+AST_mean,AST,severity,mean,IU/L,True,physiology,,R2
+AST_median,AST,severity,median,IU/L,False,physiology,,R4
+AST_min,AST,severity,min,IU/L,True,physiology,,R2
+AST_max,AST,severity,max,IU/L,True,physiology,,R2
+AST_first,AST,severity,first,IU/L,False,physiology,,R4
+AST_last,AST,severity,last,IU/L,False,physiology,,R1
+AST_trend,AST,trajectory,trend,IU/L,False,physiology,,R4
+AST_sd,AST,variability,sd,IU/L,True,physiology,,R2
+AST_range,AST,variability,range,IU/L,False,physiology,,R4
+AST_iqr,AST,variability,iqr,IU/L,True,physiology,,R2
+AST_mad,AST,variability,mad,IU/L,True,physiology,,R2
+AST_slope,AST,trajectory,slope,IU/L/hour,True,physiology,,R2
+Bilirubin_mean,Bilirubin,severity,mean,mg/dL,True,physiology,,R2
+Bilirubin_median,Bilirubin,severity,median,mg/dL,False,physiology,,R4
+Bilirubin_min,Bilirubin,severity,min,mg/dL,True,physiology,,R2
+Bilirubin_max,Bilirubin,severity,max,mg/dL,True,physiology,,R2
+Bilirubin_first,Bilirubin,severity,first,mg/dL,False,physiology,,R4
+Bilirubin_last,Bilirubin,severity,last,mg/dL,False,physiology,,R1
+Bilirubin_trend,Bilirubin,trajectory,trend,mg/dL,False,physiology,,R4
+Bilirubin_sd,Bilirubin,variability,sd,mg/dL,True,physiology,,R2
+Bilirubin_range,Bilirubin,variability,range,mg/dL,False,physiology,,R4
+Bilirubin_iqr,Bilirubin,variability,iqr,mg/dL,True,physiology,,R2
+Bilirubin_mad,Bilirubin,variability,mad,mg/dL,True,physiology,,R2
+Bilirubin_slope,Bilirubin,trajectory,slope,mg/dL/hour,True,physiology,,R2
+TroponinI_mean,TroponinI,severity,mean,ng/mL,True,physiology,,R2
+TroponinI_median,TroponinI,severity,median,ng/mL,False,physiology,,R4
+TroponinI_min,TroponinI,severity,min,ng/mL,True,physiology,,R2
+TroponinI_max,TroponinI,severity,max,ng/mL,True,physiology,,R2
+TroponinI_first,TroponinI,severity,first,ng/mL,False,physiology,,R4
+TroponinI_last,TroponinI,severity,last,ng/mL,False,physiology,,R1
+Cholesterol_mean,Cholesterol,severity,mean,mg/dL,True,physiology,,R2
+Cholesterol_median,Cholesterol,severity,median,mg/dL,False,physiology,,R4
+Cholesterol_min,Cholesterol,severity,min,mg/dL,True,physiology,,R2
+Cholesterol_max,Cholesterol,severity,max,mg/dL,True,physiology,,R2
+Cholesterol_first,Cholesterol,severity,first,mg/dL,False,physiology,,R4
+Cholesterol_last,Cholesterol,severity,last,mg/dL,False,physiology,,R1
+TroponinI_trend,TroponinI,trajectory,trend,ng/mL,False,physiology,,R4
+TroponinI_sd,TroponinI,variability,sd,ng/mL,True,physiology,,R2
+TroponinI_range,TroponinI,variability,range,ng/mL,False,physiology,,R4
+TroponinI_iqr,TroponinI,variability,iqr,ng/mL,True,physiology,,R2
+TroponinI_mad,TroponinI,variability,mad,ng/mL,True,physiology,,R2
+TroponinI_slope,TroponinI,trajectory,slope,ng/mL/hour,True,physiology,,R2
+TroponinT_mean,TroponinT,severity,mean,ng/mL,True,physiology,,R2
+TroponinT_median,TroponinT,severity,median,ng/mL,False,physiology,,R4
+TroponinT_min,TroponinT,severity,min,ng/mL,True,physiology,,R2
+TroponinT_max,TroponinT,severity,max,ng/mL,True,physiology,,R2
+TroponinT_first,TroponinT,severity,first,ng/mL,False,physiology,,R4
+TroponinT_last,TroponinT,severity,last,ng/mL,False,physiology,,R1
+TroponinT_trend,TroponinT,trajectory,trend,ng/mL,False,physiology,,R4
+TroponinT_sd,TroponinT,variability,sd,ng/mL,True,physiology,,R2
+TroponinT_range,TroponinT,variability,range,ng/mL,False,physiology,,R4
+TroponinT_iqr,TroponinT,variability,iqr,ng/mL,True,physiology,,R2
+TroponinT_mad,TroponinT,variability,mad,ng/mL,True,physiology,,R2
+TroponinT_slope,TroponinT,trajectory,slope,ng/mL/hour,True,physiology,,R2
+Cholesterol_trend,Cholesterol,trajectory,trend,mg/dL,False,physiology,,R4
+Cholesterol_sd,Cholesterol,variability,sd,mg/dL,True,physiology,,R2
+Cholesterol_range,Cholesterol,variability,range,mg/dL,False,physiology,,R4
+Cholesterol_iqr,Cholesterol,variability,iqr,mg/dL,True,physiology,,R2
+Cholesterol_mad,Cholesterol,variability,mad,mg/dL,True,physiology,,R2
+Cholesterol_slope,Cholesterol,trajectory,slope,mg/dL/hour,True,physiology,,R2

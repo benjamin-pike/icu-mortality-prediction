@@ -1,0 +1,85 @@
+canonical_variable,source_table,ITEMID,item_label,category,mimic_unit,target_unit,inclusion_status
+ALP,LABEVENTS,50863,Alkaline Phosphatase,Chemistry,,IU/L,included
+ALT,LABEVENTS,50861,Alanine Aminotransferase (ALT),Chemistry,,IU/L,included
+AST,LABEVENTS,50878,Asparate Aminotransferase (AST),Chemistry,,IU/L,included
+Age,PATIENTS,,PATIENTS,,years,years,included
+Albumin,LABEVENTS,50862,Albumin,Chemistry,,g/dL,included
+BUN,LABEVENTS,51006,Urea Nitrogen,Chemistry,,mg/dL,included
+Bilirubin,LABEVENTS,50885,"Bilirubin, Total",Chemistry,,mg/dL,included
+Cholesterol,LABEVENTS,50907,"Cholesterol, Total",Chemistry,,mg/dL,included
+Creatinine,LABEVENTS,50912,Creatinine,Chemistry,,mg/dL,included
+DiasABP,CHARTEVENTS,220051,Arterial Blood Pressure diastolic,Routine Vital Signs,mmHg,mmHg,included
+FiO2,CHARTEVENTS,223835,Inspired O2 Fraction,Respiratory,,fraction,included
+GCS,CHARTEVENTS,220739,GCS - Eye Opening,Neurological,,score,included
+GCS,CHARTEVENTS,223900,GCS - Verbal Response,Neurological,,score,included
+GCS,CHARTEVENTS,223901,GCS - Motor Response,Neurological,,score,included
+Gender,PATIENTS,,PATIENTS,,binary,binary,included
+Glucose,LABEVENTS,50809,Glucose,Blood Gas,,mg/dL,included
+Glucose,LABEVENTS,50931,Glucose,Chemistry,,mg/dL,included
+HCO3,LABEVENTS,50803,"Calculated Bicarbonate, Whole Blood",Blood Gas,,mEq/L,included
+HCO3,LABEVENTS,50882,Bicarbonate,Chemistry,,mEq/L,included
+HCT,LABEVENTS,50810,"Hematocrit, Calculated",Blood Gas,,%,included
+HCT,LABEVENTS,51221,Hematocrit,Hematology,,%,included
+HR,CHARTEVENTS,220045,Heart Rate,Routine Vital Signs,bpm,bpm,included
+Height,CHARTEVENTS,226707,Height,General,Inch,cm,included
+Height,CHARTEVENTS,226730,Height (cm),General,cm,cm,included
+Height,OMR,,Height (Inches),online medical record,inches,cm,included
+ICUType,ICUSTAYS,,ICUSTAYS,,category,category,included
+K,LABEVENTS,50822,"Potassium, Whole Blood",Blood Gas,,mEq/L,included
+K,LABEVENTS,50971,Potassium,Chemistry,,mEq/L,included
+Lactate,LABEVENTS,50813,Lactate,Blood Gas,,mmol/L,included
+MAP,CHARTEVENTS,220052,Arterial Blood Pressure mean,Routine Vital Signs,mmHg,mmHg,included
+MechVent,CHARTEVENTS,220339,PEEP set,Respiratory,cmH2O,indicator,included
+MechVent,CHARTEVENTS,223848,Ventilator Type,Respiratory,,indicator,included
+MechVent,CHARTEVENTS,223849,Ventilator Mode,Respiratory,,indicator,included
+MechVent,CHARTEVENTS,224419,Negative Insp. Force,Respiratory,cmH2O,indicator,included
+MechVent,CHARTEVENTS,224684,Tidal Volume (set),Respiratory,mL,indicator,included
+MechVent,CHARTEVENTS,224685,Tidal Volume (observed),Respiratory,mL,indicator,included
+MechVent,CHARTEVENTS,224686,Tidal Volume (spontaneous),Respiratory,mL,indicator,included
+MechVent,CHARTEVENTS,224687,Minute Volume,Respiratory,L/min,indicator,included
+MechVent,CHARTEVENTS,224695,Peak Insp. Pressure,Respiratory,cmH2O,indicator,included
+MechVent,CHARTEVENTS,224696,Plateau Pressure,Respiratory,cmH2O,indicator,included
+MechVent,CHARTEVENTS,224697,Mean Airway Pressure,Respiratory,cmH2O,indicator,included
+MechVent,CHARTEVENTS,224700,Total PEEP Level,Respiratory,cmH2O,indicator,included
+MechVent,CHARTEVENTS,224701,PSV Level,Respiratory,cmH2O,indicator,included
+MechVent,CHARTEVENTS,224702,PCV Level,Respiratory,cmH2O,indicator,included
+MechVent,CHARTEVENTS,224705,P High (APRV),Respiratory,cmH2O,indicator,included
+MechVent,CHARTEVENTS,224706,P Low (APRV),Respiratory,cmH2O,indicator,included
+MechVent,CHARTEVENTS,224707,T High (APRV),Respiratory,sec,indicator,included
+MechVent,CHARTEVENTS,224709,T Low (APRV),Respiratory,sec,indicator,included
+MechVent,CHARTEVENTS,224738,Inspiratory Time,Respiratory,sec,indicator,included
+MechVent,CHARTEVENTS,224746,Transpulmonary Pressure (Exp. Hold),Respiratory,cmH2O,indicator,included
+MechVent,CHARTEVENTS,224747,Transpulmonary Pressure (Insp. Hold),Respiratory,cmH2O,indicator,included
+MechVent,CHARTEVENTS,224750,Nitric Oxide Tank Pressure,Respiratory,psi,indicator,included
+MechVent,CHARTEVENTS,226873,Inspiratory Ratio,Respiratory,,indicator,included
+MechVent,CHARTEVENTS,227187,Pinsp (Draeger only),Respiratory,cmH2O,indicator,included
+Mg,LABEVENTS,50960,Magnesium,Chemistry,,mmol/L,included
+NIDiasABP,CHARTEVENTS,220180,Non Invasive Blood Pressure diastolic,Routine Vital Signs,mmHg,mmHg,included
+NIMAP,CHARTEVENTS,220181,Non Invasive Blood Pressure mean,Routine Vital Signs,mmHg,mmHg,included
+NISysABP,CHARTEVENTS,220179,Non Invasive Blood Pressure systolic,Routine Vital Signs,mmHg,mmHg,included
+Na,LABEVENTS,50824,"Sodium, Whole Blood",Blood Gas,,mEq/L,included
+Na,LABEVENTS,50983,Sodium,Chemistry,,mEq/L,included
+PaCO2,LABEVENTS,50818,pCO2,Blood Gas,,mmHg,included
+PaO2,LABEVENTS,50821,pO2,Blood Gas,,mmHg,included
+Platelets,LABEVENTS,51265,Platelet Count,Hematology,,10^3/uL,included
+RespRate,CHARTEVENTS,220210,Respiratory Rate,Respiratory,insp/min,breaths/min,included
+SaO2,CHARTEVENTS,220277,O2 saturation pulseoxymetry,Respiratory,%,%,included
+SysABP,CHARTEVENTS,220050,Arterial Blood Pressure systolic,Routine Vital Signs,mmHg,mmHg,included
+Temp,CHARTEVENTS,223761,Temperature Fahrenheit,Routine Vital Signs,°F,C,included
+Temp,CHARTEVENTS,223762,Temperature Celsius,Routine Vital Signs,°C,C,included
+TroponinI,LABEVENTS,51002,Troponin I,Chemistry,,ng/mL,included
+TroponinT,LABEVENTS,51003,Troponin T,Chemistry,,ng/mL,included
+Urine,OUTPUTEVENTS,226557,R Ureteral Stent,Output,mL,mL,included
+Urine,OUTPUTEVENTS,226558,L Ureteral Stent,Output,mL,mL,included
+Urine,OUTPUTEVENTS,226559,Foley,Output,mL,mL,included
+Urine,OUTPUTEVENTS,226560,Void,Output,mL,mL,included
+Urine,OUTPUTEVENTS,226563,Suprapubic,Output,mL,mL,included
+Urine,OUTPUTEVENTS,226564,R Nephrostomy,Output,mL,mL,included
+Urine,OUTPUTEVENTS,226565,L Nephrostomy,Output,mL,mL,included
+Urine,OUTPUTEVENTS,226584,Ileoconduit,Output,mL,mL,included
+WBC,LABEVENTS,51300,WBC Count,Hematology,,10^3/uL,included
+WBC,LABEVENTS,51301,White Blood Cells,Hematology,,10^3/uL,included
+Weight,CHARTEVENTS,224639,Daily Weight,General,kg,kg,included
+Weight,CHARTEVENTS,226512,Admission Weight (Kg),General,kg,kg,included
+Weight,CHARTEVENTS,226531,Admission Weight (lbs.),General,,kg,included
+pH,LABEVENTS,50820,pH,Blood Gas,,pH units,included
